@@ -2,13 +2,13 @@ language: node_js
 node_js: stable
 
 # Travis-CI Caching
-
 cache:
   directories:
     - node_modules
 
 before_install:
-  - npm install -g hexo-cli # 安装 hexo
+#- npm install -g hexo-cli # 安装 hexo
+  - npm install hexo --no-optional
 
 install:
   - npm install hexo-search --save
@@ -33,7 +33,7 @@ after_script:
 
 branches:
   only:
-    - myblog
+    - master
 
 env:
   global:
