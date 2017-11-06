@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    
+    <title>phpMyAdmin导出excel文件解析时的坑 | The Golden Age</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+        <meta name="keywords" content="python" />
+    
+    <meta name="description" content="phpMyAdmin导出excel文件，在解析时遇到的问题phpMyAdmin很多人都喜欢使用的WEB数据库管理系统，前几年非常流行，刚好我要查询对方数据库，他们就用的这个 需求我的要求很简单，从他们库中导出数据文件，excel即可，然后自己解析，再进行处理数据">
+<meta name="keywords" content="python">
+<meta property="og:type" content="article">
+<meta property="og:title" content="phpMyAdmin导出excel文件解析时的坑">
+<meta property="og:url" content="http://www.candypapi.com/2017/02/08/phpMyAdmin导出excel文件解析时的坑/index.html">
+<meta property="og:site_name" content="The Golden Age">
+<meta property="og:description" content="phpMyAdmin导出excel文件，在解析时遇到的问题phpMyAdmin很多人都喜欢使用的WEB数据库管理系统，前几年非常流行，刚好我要查询对方数据库，他们就用的这个 需求我的要求很简单，从他们库中导出数据文件，excel即可，然后自己解析，再进行处理数据">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://oi1wvrjc2.bkt.clouddn.com/17-2-8/44364820-file_1486535637317_11f27.png">
+<meta property="og:updated_time" content="2017-11-06T02:05:19.561Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="phpMyAdmin导出excel文件解析时的坑">
+<meta name="twitter:description" content="phpMyAdmin导出excel文件，在解析时遇到的问题phpMyAdmin很多人都喜欢使用的WEB数据库管理系统，前几年非常流行，刚好我要查询对方数据库，他们就用的这个 需求我的要求很简单，从他们库中导出数据文件，excel即可，然后自己解析，再进行处理数据">
+<meta name="twitter:image" content="http://oi1wvrjc2.bkt.clouddn.com/17-2-8/44364820-file_1486535637317_11f27.png">
+    
+
+    
+        <link rel="alternate" href="/atom.xml" title="The Golden Age" type="application/atom+xml" />
+    
+
+    
+        <link rel="icon" href="/images/ouroporos.jpg" />
+    
+
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/libs/titillium-web/styles.css">
+    <link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/libs/jquery/2.0.3/jquery.min.js"></script>
+    
+    
+        <link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+    
+    
+        <link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+    
+    
+        <script type="text/javascript">
+(function(i,s,o,g,r,a,m) {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() {
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-107137911-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+    
+    
+
+
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+    <div id="header-outer" class="outer">
+        <div class="container">
+            <div class="container-inner">
+                <div id="header-title">
+                    <h1 class="logo-wrap">
+                        <a href="/" class="logo"></a>
+                    </h1>
+                    
+                        <h2 class="subtitle-wrap">
+                            <p class="subtitle">The golden age is before us , not behind us . (Mark Twain)</p>
+                        </h2>
+                    
+                </div>
+                <div id="header-inner" class="nav-container">
+                    <a id="main-nav-toggle" class="nav-icon fa fa-bars"></a>
+                    <div class="nav-container-inner">
+                        <ul id="main-nav">
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/">主页</a>
+                                </li>
+                            
+                                        <ul class="main-nav-list"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/English/">English</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/django/">django</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/life/">life</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/life/精彩美剧/">精彩美剧</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/life/高分电影/">高分电影</a></li></ul></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/linux/">linux</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/linux/ubuntu/">ubuntu</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/linux/vps/">vps</a></li></ul></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/python/">python</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/python/django/">django</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/python/标准/">标准</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/python/设计模式/">设计模式</a></li></ul></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/redis/">redis</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/test/">test</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/总结/">总结</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/自动化/">自动化</a></li></ul>
+                                    
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/about/index.html">关于</a>
+                                </li>
+                            
+                        </ul>
+                        <nav id="sub-nav">
+                            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜索" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="想要查找什么..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '(未命名)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+</div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+        <div class="container">
+            <div class="main-body container-inner">
+                <div class="main-body-inner">
+                    <section id="main">
+                        <div class="main-body-header">
+    <h1 class="header">
+    
+    <a class="page-title-link" href="/categories/python/">python</a>
+    </h1>
+</div>
+                        <div class="main-body-content">
+                            <article id="post-phpMyAdmin导出excel文件解析时的坑" class="article article-single article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+            <header class="article-header">
+                
+    
+        <h1 class="article-title" itemprop="name">
+        phpMyAdmin导出excel文件解析时的坑
+        </h1>
+    
+
+            </header>
+        
+        
+            <div class="article-meta">
+                
+    <div class="article-date">
+        <a href="/2017/02/08/phpMyAdmin导出excel文件解析时的坑/" class="article-date">
+            <time datetime="2017-02-08T14:17:38.000Z" itemprop="datePublished">2017-02-08</time>
+        </a>
+    </div>
+
+                
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/python/">python</a>
+    </div>
+
+            </div>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+            <h2 id="phpMyAdmin导出excel文件，在解析时遇到的问题"><a href="#phpMyAdmin导出excel文件，在解析时遇到的问题" class="headerlink" title="phpMyAdmin导出excel文件，在解析时遇到的问题"></a>phpMyAdmin导出excel文件，在解析时遇到的问题</h2><h3 id="phpMyAdmin"><a href="#phpMyAdmin" class="headerlink" title="phpMyAdmin"></a>phpMyAdmin</h3><p>很多人都喜欢使用的WEB数据库管理系统，前几年非常流行，刚好我要查询对方数据库，<br>他们就用的这个</p>
+<h3 id="需求"><a href="#需求" class="headerlink" title="需求"></a>需求</h3><p>我的要求很简单，从他们库中导出数据文件，excel即可，然后自己解析，再进行处理数据<br><a id="more"></a></p>
+<h3 id="坑"><a href="#坑" class="headerlink" title="坑"></a>坑</h3><p>解析excel，当然首选简单好用的包，xlrd就很不错;</p>
+<h4 id="xlrd"><a href="#xlrd" class="headerlink" title="xlrd"></a>xlrd</h4><p>但在读取时，总会报错；错误如下：</p>
+<h5 id="读取"><a href="#读取" class="headerlink" title="读取"></a>读取</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> xlrd</div><div class="line">workbook = xlrd.open_workbook(<span class="string">"/home/hanz/book1.xls"</span>)</div></pre></td></tr></table></figure>
+<p>结果是，报错如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">xlrd.biffh.XLRDError: Unsupported format, or corrupt file: Expected BOF record;</div><div class="line">found &apos;&lt;html r&apos;&quot;</div></pre></td></tr></table></figure></p>
+<h4 id="其他解析excel包"><a href="#其他解析excel包" class="headerlink" title="其他解析excel包"></a>其他解析excel包</h4><p>之后又试了pandas，巨大无比的一个解析数据的包，但同样无法解析。。。</p>
+<h3 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h3><h4 id="根据报错分析原因"><a href="#根据报错分析原因" class="headerlink" title="根据报错分析原因"></a>根据报错分析原因</h4><p>根据xlrd报的错，猜了一下原因，有可能导出的excel文件并不是正规的excel保存的那种；<br>里面的&lt;html就能看出来，中间是包含有html代码的，于是，用文本打开了看了一下，果然：</p>
+<p><img src="http://oi1wvrjc2.bkt.clouddn.com/17-2-8/44364820-file_1486535637317_11f27.png" alt="phpmyadmin-export-excel-file"></p>
+<p>把后缀改为.html，直接就能浏览器打开了。。。果然是伪excel文件。。。</p>
+<h3 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h3><p>知道原因了，解决起来就简单了</p>
+<h4 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h4><p>如果是html文件，那首选html解析的包就可以，不用去做正则匹配，这类解析包也有很多，比如：</p>
+<p><a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc.zh/" target="_blank" rel="external">beautifulsoup</a></p>
+<p><a href="https://pythonhosted.org/pyquery" target="_blank" rel="external">pyquery</a></p>
+<h4 id="选用"><a href="#选用" class="headerlink" title="选用"></a>选用</h4><p>在这里选用我的宗旨就是方便，人生苦短嘛。<br>所以就用pyquery喽。<br>语法非常方便！～<br>pyquery完全API点击这里：<a href="https://pythonhosted.org/pyquery/api.html" target="_blank" rel="external">PyQuery-API</a><br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">from</span> pyquery <span class="keyword">import</span> PyQuery</div><div class="line">f = PyQuery(<span class="string">"/home/hanz/o12_adsf.xls"</span>)</div><div class="line">doo = f(<span class="string">"tr"</span>)</div><div class="line">doo.text()</div></pre></td></tr></table></figure></p>
+
+        </div>
+        <footer class="article-footer">
+            
+
+
+    <div class="a2a_kit a2a_default_style">
+    <a class="a2a_dd" href="https://www.addtoany.com/share">Share</a>
+    <span class="a2a_divider"></span>
+    <a class="a2a_button_facebook"></a>
+    <a class="a2a_button_twitter"></a>
+    <a class="a2a_button_google_plus"></a>
+    <a class="a2a_button_pinterest"></a>
+    <a class="a2a_button_tumblr"></a>
+</div>
+<script type="text/javascript" src="//static.addtoany.com/menu/page.js"></script>
+<style>
+    .a2a_menu {
+        border-radius: 4px;
+    }
+    .a2a_menu a {
+        margin: 2px 0;
+        font-size: 14px;
+        line-height: 16px;
+        border-radius: 4px;
+        color: inherit !important;
+        font-family: 'Microsoft Yahei';
+    }
+    #a2apage_dropdown {
+        margin: 10px 0;
+    }
+    .a2a_mini_services {
+        padding: 10px;
+    }
+    a.a2a_i,
+    i.a2a_i {
+        width: 122px;
+        line-height: 16px;
+    }
+    a.a2a_i .a2a_svg,
+    a.a2a_more .a2a_svg {
+        width: 16px;
+        height: 16px;
+        line-height: 16px;
+        vertical-align: top;
+        background-size: 16px;
+    }
+    a.a2a_i {
+        border: none !important;
+    }
+    a.a2a_menu_show_more_less {
+        margin: 0;
+        padding: 10px 0;
+        line-height: 16px;
+    }
+    .a2a_mini_services:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+    .a2a_mini_services{*+height:1%;}
+</style>
+
+
+        </footer>
+    </div>
+</article>
+
+    <section id="comments">
+    
+        
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+
+    
+    </section>
+
+
+                        </div>
+                    </section>
+                    <aside id="sidebar">
+    <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
+    <div class="sidebar-top">
+        <p>关注我 :</p>
+        <ul class="social-links">
+            
+                
+                <li>
+                    <a class="social-tooltip" title="twitter" href="https://twitter.com/civic_hanz" target="_blank">
+                        <i class="icon fa fa-twitter"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="facebook" href="https://www.facebook.com/yer.xiaoyao" target="_blank">
+                        <i class="icon fa fa-facebook"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="google-plus" href="https://plus.google.com/111575769836214006428" target="_blank">
+                        <i class="icon fa fa-google-plus"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="github" href="https://github.com/yangeren" target="_blank">
+                        <i class="icon fa fa-github"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="weibo" href="https://weibo.com/yangeren" target="_blank">
+                        <i class="icon fa fa-weibo"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="rss" href="/atom.xml" target="_blank">
+                        <i class="icon fa fa-rss"></i>
+                    </a>
+                </li>
+                
+            
+        </ul>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+        <a href="/2017/02/13/ModelAdmin-and-action-of-django-admin/" id="article-nav-newer" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">下一篇</strong>
+        <p class="article-nav-title">
+        
+            django admin的个性定制与方法覆写
+        
+        </p>
+        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
+    </a>
+    
+    
+        <a href="/2017/02/08/在POST请求中，如何获取select的值/" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">上一篇</strong>
+        <p class="article-nav-title">在POST请求中，如何获取select的值</p>
+        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+        </a>
+    
+</nav>
+
+    
+    <div class="widgets-container">
+        
+            
+                
+    <div class="widget-wrap">
+        <h3 class="widget-title">最新文章</h3>
+        <div class="widget">
+            <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2017/11/06/Use-urlparse-to-change-the-url/" class="thumbnail">
+    
+    
+        <span style="background-image:url(http://oi1wvrjc2.bkt.clouddn.com/17-9-26/66144228.jpg)" alt="使用urlparse修改url" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/python/">python</a></p>
+                            <p class="item-title"><a href="/2017/11/06/Use-urlparse-to-change-the-url/" class="title">使用urlparse修改url</a></p>
+                            <p class="item-date"><time datetime="2017-11-06T09:39:20.000Z" itemprop="datePublished">2017-11-06</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2017/11/02/Python-external-script-calls-the-Django-project-model-table/" class="thumbnail">
+    
+    
+        <span style="background-image:url(http://oi1wvrjc2.bkt.clouddn.com/17-11-2/41607477.jpg)" alt="Python外部脚本调用Django项目的Model" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/django/">django</a></p>
+                            <p class="item-title"><a href="/2017/11/02/Python-external-script-calls-the-Django-project-model-table/" class="title">Python外部脚本调用Django项目的Model</a></p>
+                            <p class="item-date"><time datetime="2017-11-02T16:35:59.000Z" itemprop="datePublished">2017-11-02</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2017/06/08/many-way-to-killed-ps-in-linux/" class="thumbnail">
+    
+    
+        <span style="background-image:url(http://oi1wvrjc2.bkt.clouddn.com/17-9-26/39733243.jpg)" alt="linux下一句话Kill进程" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/linux/">linux</a></p>
+                            <p class="item-title"><a href="/2017/06/08/many-way-to-killed-ps-in-linux/" class="title">linux下一句话Kill进程</a></p>
+                            <p class="item-date"><time datetime="2017-06-08T17:31:15.000Z" itemprop="datePublished">2017-06-08</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2017/05/15/sense8-in-our-heart/" class="thumbnail">
+    
+    
+        <span style="background-image:url(http://oi1wvrjc2.bkt.clouddn.com/17-5-15/76076106-file_1494828659527_1781d.png)" alt="sense8 &amp; what&#39;s up~" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/life/">life</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/life/精彩美剧/">精彩美剧</a></p>
+                            <p class="item-title"><a href="/2017/05/15/sense8-in-our-heart/" class="title">sense8 &amp; what&#39;s up~</a></p>
+                            <p class="item-date"><time datetime="2017-05-15T14:07:53.000Z" itemprop="datePublished">2017-05-15</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2017/05/12/show-connect-user-count-on-shadowsocks-server/" class="thumbnail">
+    
+    
+        <span style="background-image:url(http://i4.buimg.com/588926/d4cece95e36ac2ae.png)" alt="查看shadowsocks服务器的用户连接数" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/linux/">linux</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/linux/vps/">vps</a></p>
+                            <p class="item-title"><a href="/2017/05/12/show-connect-user-count-on-shadowsocks-server/" class="title">查看shadowsocks服务器的用户连接数</a></p>
+                            <p class="item-date"><time datetime="2017-05-12T16:24:21.000Z" itemprop="datePublished">2017-05-12</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">分类</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/English/">English</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/django/">django</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/life/">life</a><span class="category-list-count">3</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/life/精彩美剧/">精彩美剧</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/life/高分电影/">高分电影</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/linux/">linux</a><span class="category-list-count">8</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/linux/ubuntu/">ubuntu</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/linux/vps/">vps</a><span class="category-list-count">2</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/python/">python</a><span class="category-list-count">16</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/python/django/">django</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/python/标准/">标准</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/python/设计模式/">设计模式</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/redis/">redis</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/test/">test</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/总结/">总结</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/自动化/">自动化</a><span class="category-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">归档</h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/11/">十一月 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/06/">六月 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/05/">五月 2017</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/04/">四月 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/02/">二月 2017</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">一月 2017</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">十二月 2016</a><span class="archive-list-count">22</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-float">
+        <h3 class="widget-title">标签云</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/English/" style="font-size: 10px;">English</a> <a href="/tags/PIL/" style="font-size: 10px;">PIL</a> <a href="/tags/Remote/" style="font-size: 10px;">Remote</a> <a href="/tags/Thunderbird/" style="font-size: 10px;">Thunderbird</a> <a href="/tags/UI自动化/" style="font-size: 10px;">UI自动化</a> <a href="/tags/action/" style="font-size: 10px;">action</a> <a href="/tags/celery/" style="font-size: 12.5px;">celery</a> <a href="/tags/django/" style="font-size: 17.5px;">django</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/gunicorn/" style="font-size: 10px;">gunicorn</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/jquery/" style="font-size: 10px;">jquery</a> <a href="/tags/linux/" style="font-size: 10px;">linux</a> <a href="/tags/linux-ubuntu-rsa认证/" style="font-size: 10px;">linux, ubuntu, rsa认证</a> <a href="/tags/many-to-many/" style="font-size: 10px;">many-to-many</a> <a href="/tags/model/" style="font-size: 10px;">model</a> <a href="/tags/modeladmin/" style="font-size: 10px;">modeladmin</a> <a href="/tags/python/" style="font-size: 20px;">python</a> <a href="/tags/python-unittest-test/" style="font-size: 10px;">python unittest test</a> <a href="/tags/redis/" style="font-size: 10px;">redis</a> <a href="/tags/selenium/" style="font-size: 10px;">selenium</a> <a href="/tags/sense8/" style="font-size: 10px;">sense8</a> <a href="/tags/shadowsocks/" style="font-size: 12.5px;">shadowsocks</a> <a href="/tags/sort/" style="font-size: 10px;">sort</a> <a href="/tags/sorted/" style="font-size: 10px;">sorted</a> <a href="/tags/supervisor/" style="font-size: 10px;">supervisor</a> <a href="/tags/ubuntu/" style="font-size: 15px;">ubuntu</a> <a href="/tags/url/" style="font-size: 10px;">url</a> <a href="/tags/urlparse/" style="font-size: 10px;">urlparse</a> <a href="/tags/vpn/" style="font-size: 12.5px;">vpn</a> <a href="/tags/vps/" style="font-size: 12.5px;">vps</a> <a href="/tags/what-s-up/" style="font-size: 10px;">what's up</a> <a href="/tags/二叉树/" style="font-size: 10px;">二叉树</a> <a href="/tags/北京工作居住证/" style="font-size: 10px;">北京工作居住证</a> <a href="/tags/单例/" style="font-size: 10px;">单例</a> <a href="/tags/地球脉动/" style="font-size: 10px;">地球脉动</a> <a href="/tags/复习/" style="font-size: 10px;">复习</a> <a href="/tags/常用工具/" style="font-size: 10px;">常用工具</a> <a href="/tags/总结/" style="font-size: 10px;">总结</a> <a href="/tags/排序/" style="font-size: 10px;">排序</a> <a href="/tags/数据结构/" style="font-size: 10px;">数据结构</a> <a href="/tags/文件/" style="font-size: 10px;">文件</a> <a href="/tags/用例/" style="font-size: 10px;">用例</a> <a href="/tags/联合唯一索引/" style="font-size: 10px;">联合唯一索引</a> <a href="/tags/自动化/" style="font-size: 10px;">自动化</a> <a href="/tags/英语/" style="font-size: 10px;">英语</a> <a href="/tags/虚拟语气/" style="font-size: 10px;">虚拟语气</a> <a href="/tags/设计模式/" style="font-size: 10px;">设计模式</a> <a href="/tags/读写/" style="font-size: 10px;">读写</a> <a href="/tags/迭代/" style="font-size: 10px;">迭代</a> <a href="/tags/递归/" style="font-size: 10px;">递归</a> <a href="/tags/风格/" style="font-size: 10px;">风格</a> <a href="/tags/高分电影/" style="font-size: 10px;">高分电影</a>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">链接</h3>
+        <div class="widget">
+            <ul>
+                
+                    <li>
+                        <a href="http://sugar.yer.pub">Sugar-run</a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+
+            
+        
+    </div>
+</aside>
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+    <div class="container">
+        <div class="container-inner">
+            <a id="back-to-top" href="javascript:;"><i class="icon fa fa-angle-up"></i></a>
+            <div class="credit">
+                <h1 class="logo-wrap">
+                    <a href="/" class="logo"></a>
+                </h1>
+                <p>&copy; 2017 Ouroporos</p>
+                <p>Powered by <a href="//hexo.io/" target="_blank">Hexo</a>. Theme by <a href="//github.com/ppoffice" target="_blank">PPOffice</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+        
+    
+    <script>
+    var disqus_shortname = 'ouroporos';
+    
+    
+    var disqus_url = 'http://www.candypapi.com/2017/02/08/phpMyAdmin导出excel文件解析时的坑/';
+    
+    (function() {
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+
+
+
+
+    
+        <script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-share.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-video.min.js"></script>
+    
+    
+        <script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+    
+    
+
+
+
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
+
+    </div>
+</body>
+</html>

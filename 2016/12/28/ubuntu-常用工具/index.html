@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    
+    <title>ubuntu 常用工具 | The Golden Age</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+        <meta name="keywords" content="ubuntu,常用工具" />
+    
+    <meta name="description" content="Ubuntu常用工具 收集了ubuntu下常用的小工具">
+<meta name="keywords" content="ubuntu,常用工具">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ubuntu 常用工具">
+<meta property="og:url" content="http://www.candypapi.com/2016/12/28/ubuntu-常用工具/index.html">
+<meta property="og:site_name" content="The Golden Age">
+<meta property="og:description" content="Ubuntu常用工具 收集了ubuntu下常用的小工具">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://oi1wvrjc2.bkt.clouddn.com/16-12-28/59784456-file_1482905990308_3716.png">
+<meta property="og:updated_time" content="2017-11-06T02:05:19.565Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="ubuntu 常用工具">
+<meta name="twitter:description" content="Ubuntu常用工具 收集了ubuntu下常用的小工具">
+<meta name="twitter:image" content="http://oi1wvrjc2.bkt.clouddn.com/16-12-28/59784456-file_1482905990308_3716.png">
+    
+
+    
+        <link rel="alternate" href="/atom.xml" title="The Golden Age" type="application/atom+xml" />
+    
+
+    
+        <link rel="icon" href="/images/ouroporos.jpg" />
+    
+
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/libs/titillium-web/styles.css">
+    <link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/libs/jquery/2.0.3/jquery.min.js"></script>
+    
+    
+        <link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+    
+    
+        <link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+    
+    
+        <script type="text/javascript">
+(function(i,s,o,g,r,a,m) {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() {
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-107137911-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+    
+    
+
+
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+    <div id="header-outer" class="outer">
+        <div class="container">
+            <div class="container-inner">
+                <div id="header-title">
+                    <h1 class="logo-wrap">
+                        <a href="/" class="logo"></a>
+                    </h1>
+                    
+                        <h2 class="subtitle-wrap">
+                            <p class="subtitle">The golden age is before us , not behind us . (Mark Twain)</p>
+                        </h2>
+                    
+                </div>
+                <div id="header-inner" class="nav-container">
+                    <a id="main-nav-toggle" class="nav-icon fa fa-bars"></a>
+                    <div class="nav-container-inner">
+                        <ul id="main-nav">
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/">主页</a>
+                                </li>
+                            
+                                        <ul class="main-nav-list"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/English/">English</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/django/">django</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/life/">life</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/life/精彩美剧/">精彩美剧</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/life/高分电影/">高分电影</a></li></ul></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/linux/">linux</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/linux/ubuntu/">ubuntu</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/linux/vps/">vps</a></li></ul></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/python/">python</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/python/django/">django</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/python/标准/">标准</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/python/设计模式/">设计模式</a></li></ul></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/redis/">redis</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/test/">test</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/总结/">总结</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/自动化/">自动化</a></li></ul>
+                                    
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/about/index.html">关于</a>
+                                </li>
+                            
+                        </ul>
+                        <nav id="sub-nav">
+                            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜索" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="想要查找什么..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '(未命名)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+</div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+        <div class="container">
+            <div class="main-body container-inner">
+                <div class="main-body-inner">
+                    <section id="main">
+                        <div class="main-body-header">
+    <h1 class="header">
+    
+    <a class="page-title-link" href="/categories/linux/">linux</a>
+    </h1>
+</div>
+                        <div class="main-body-content">
+                            <article id="post-ubuntu-常用工具" class="article article-single article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+            <header class="article-header">
+                
+    
+        <h1 class="article-title" itemprop="name">
+        ubuntu 常用工具
+        </h1>
+    
+
+            </header>
+        
+        
+            <div class="article-meta">
+                
+    <div class="article-date">
+        <a href="/2016/12/28/ubuntu-常用工具/" class="article-date">
+            <time datetime="2016-12-28T14:16:15.000Z" itemprop="datePublished">2016-12-28</time>
+        </a>
+    </div>
+
+                
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/ubuntu/">ubuntu</a>, <a class="tag-link" href="/tags/常用工具/">常用工具</a>
+    </div>
+
+            </div>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+            <h1 id="Ubuntu常用工具"><a href="#Ubuntu常用工具" class="headerlink" title="Ubuntu常用工具"></a>Ubuntu常用工具</h1><blockquote>
+<p>收集了ubuntu下常用的小工具</p>
+</blockquote>
+<a id="more"></a>
+<h3 id="版本控制软件GUI版"><a href="#版本控制软件GUI版" class="headerlink" title="版本控制软件GUI版"></a>版本控制软件GUI版</h3><h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><blockquote>
+<p>按照wiki安装，rabbitvcs<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">sudo apt-add-repository universe</div><div class="line">sudo apt-get update</div><div class="line">sudo apt-get install rabbitvcs-nautilus</div></pre></td></tr></table></figure></p>
+</blockquote>
+<p><a href="http://wiki.rabbitvcs.org/wiki/install/ubuntu" target="_blank" rel="external">WIKI</a></p>
+<h4 id="安装完毕重启"><a href="#安装完毕重启" class="headerlink" title="安装完毕重启"></a>安装完毕重启</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">nautilus -q</div></pre></td></tr></table></figure>
+<h4 id="安装完成效果图"><a href="#安装完成效果图" class="headerlink" title="安装完成效果图"></a>安装完成效果图</h4><p><img src="http://oi1wvrjc2.bkt.clouddn.com/16-12-28/59784456-file_1482905990308_3716.png" alt="效果图1"></p>
+<blockquote>
+<p>以下引用<br><a href="http://kuanghy.github.io/2016/09/01/linux-softwares" target="_blank" rel="external">旷世的忧伤博客</a></p>
+</blockquote>
+<h3 id="Transmission"><a href="#Transmission" class="headerlink" title="Transmission"></a>Transmission</h3><p>Transmission 是一种 BitTorrent 客户端，特点是一个跨平台的后端和其上的简洁的用户界面。BT 种子一种“.torrent”文件，装有BT（BitTorrent）下载必须的文件信息，作用相当于HTTP下载里的URL链接</p>
+<h3 id="gimp"><a href="#gimp" class="headerlink" title="gimp"></a>gimp</h3><p>图形处理</p>
+<h3 id="steam"><a href="#steam" class="headerlink" title="steam"></a>steam</h3><p>游戏客户端</p>
+<h3 id="bleachbit"><a href="#bleachbit" class="headerlink" title="bleachbit"></a>bleachbit</h3><p>系统记录清理工具</p>
+<h3 id="xdman"><a href="#xdman" class="headerlink" title="xdman"></a>xdman</h3><p>Xtreme Download Manager, 下载管理器</p>
+<h3 id="preload"><a href="#preload" class="headerlink" title="preload"></a>preload</h3><p>Preload 是一个自适应预读守护进程。它监控用户运行的应用程序，并且分析这些数据，预测用户可能运行的程序，并读取这些程序的二进制文件及其依赖文件到系统内存，以达到加速启动的时间。Preload 将在后台静静运行。如果你想改变 Preload 的行为，你可以编辑它的配置文件 /etc/preload.conf。</p>
+<h3 id="apt-fast"><a href="#apt-fast" class="headerlink" title="apt-fast"></a>apt-fast</h3><p>Apt-fast 是一款替代 apt-get 提升下载速度的软件，安装软件时，通过增加线程使下载软件速度加快。 Apt-fast 已经更新到1.6.4版本，引入配置“对话框”，在其安装过程中，一步步对话框选择设置，每个用户的配置选项，从而改善和清晰化 Apt-fast的初始配置过程。</p>
+<h3 id="AppGrid"><a href="#AppGrid" class="headerlink" title="AppGrid"></a>AppGrid</h3><p>一个优秀的Ubuntu软件中心替代品</p>
+<h3 id="diffuse"><a href="#diffuse" class="headerlink" title="diffuse"></a>diffuse</h3><p>文件比较工具</p>
+<h3 id="ReText"><a href="#ReText" class="headerlink" title="ReText"></a>ReText</h3><p>markdown 文档编辑器</p>
+<h3 id="配置数学公式："><a href="#配置数学公式：" class="headerlink" title="配置数学公式："></a>配置数学公式：</h3><p>有时候需要在文档中添加一些数学公式，比如时间复杂度什么的O(N2)，其实，我发现Github官网的页面是不支持的，不知道是不是Github有自己的数学公式输入格式。</p>
+<p>在Retext下想使用，首先应该先安装MathJax</p>
+<p><code>sudo apt-get install libjs-mathjax</code><br>安装好后，打开ReText的设置界面，在Markdown extensions框里添加字段：mathjax，重启ReText，输入公式，如 N32 ，OK！</p>
+<p>添加语法高亮：<br>ReText支持语法高亮，但需要在在Markdown extensions框里添加字段：codehilite，同时，需要下载安装高亮支持模块python-pygments：</p>
+<p><code>sudo apt-get install python-pygments</code><br>这个方法来自与ReText的扩展说明, 文档里的扩展功能添加进ReText的Markdown extensions时，都必须该成小写字母，否则无效！同时，两个扩展之间用英文逗号分割。</p>
+<h3 id="Remarkable"><a href="#Remarkable" class="headerlink" title="Remarkable"></a>Remarkable</h3><p>Remarkable, Linux 下的 markdown 文档编辑器。</p>
+<h3 id="brackets"><a href="#brackets" class="headerlink" title="brackets"></a>brackets</h3><p>Web 前端编辑器</p>
+<h3 id="terminology"><a href="#terminology" class="headerlink" title="terminology"></a>terminology</h3><p>万能的终端工具</p>
+<h3 id="terminator"><a href="#terminator" class="headerlink" title="terminator"></a>terminator</h3><p>一个不错的终端工具</p>
+<h3 id="terminix"><a href="#terminix" class="headerlink" title="terminix"></a>terminix</h3><p>GTK3 终端模拟器</p>
+<h3 id="TermKit"><a href="#TermKit" class="headerlink" title="TermKit"></a>TermKit</h3><p>TermKit 是由 Steven Wittens 为 MacOS X 编写的一个很有趣的项目，可以称之为下一代的富媒体终端。</p>
+<h3 id="Tmux"><a href="#Tmux" class="headerlink" title="Tmux"></a>Tmux</h3><p>Tmux 是一个优秀的终端复用软件。使用它最直观的好处就是，通过一个终端登录远程主机并运行tmux后，在其中可以开启多个控制台而无需再“浪费”多余的终端来连接这台远程主机。</p>
+<h3 id="nmon"><a href="#nmon" class="headerlink" title="nmon"></a>nmon</h3><p>Nmon（nigel’s monitor 的简写）是一个显示系统性能信息的工具,可以显示与 netwrok，cpu, memory 和磁盘使用情况的信息。</p>
+<h3 id="ncdu"><a href="#ncdu" class="headerlink" title="ncdu"></a>ncdu</h3><p>是一个支持光标的 du 程序，这个命令是用来分析各种目录占用的磁盘空间。按 n 则通过文件名来排序，按 s 则按文件大小来排序（默认的）。</p>
+<h3 id="dstat"><a href="#dstat" class="headerlink" title="dstat"></a>dstat</h3><p>一种灵活的组合工具，它可用于监控内存，进程，网络和磁盘性能，它可以用来取代 ifstat, iostat, dmstat 等。</p>
+<h3 id="slurm"><a href="#slurm" class="headerlink" title="slurm"></a>slurm</h3><p>一个网卡带宽监控命令行实用程序，它会自动生成 ASCII 图形输出。安装:</p>
+<p><code>apt-get install slurm</code><br>使用：</p>
+<p><code>slurm -i &lt;网卡名称&gt;</code></p>
+<h3 id="ranwhen-py"><a href="#ranwhen-py" class="headerlink" title="ranwhen.py"></a>ranwhen.py</h3><p>一种基于 Python 的终端工具，它可以用来以图形方式显示系统活动状态</p>
+<h3 id="plymouth-manager"><a href="#plymouth-manager" class="headerlink" title="plymouth-manager"></a>plymouth-manager</h3><p>修改开机登录界面。可以美化你Ubuntu的启动主题Plymouth，下载：<a href="https://launchpad.net/plymouth-manager/+download" target="_blank" rel="external">https://launchpad.net/plymouth-manager/+download</a></p>
+<h3 id="kazam"><a href="#kazam" class="headerlink" title="kazam"></a>kazam</h3><p>屏幕录制软件</p>
+<h3 id="firebug"><a href="#firebug" class="headerlink" title="firebug"></a>firebug</h3><p>火狐插件，Web开发者调试工具</p>
+<h3 id="okular"><a href="#okular" class="headerlink" title="okular"></a>okular</h3><p>阅读器，可用于阅读pdf，也可用于阅读epub电子书。</p>
+<h3 id="ranger"><a href="#ranger" class="headerlink" title="ranger"></a>ranger</h3><p>基于终端的文件浏览器</p>
+<h3 id="lolcat"><a href="#lolcat" class="headerlink" title="lolcat"></a>lolcat</h3><p><code>输入彩色文本，例如 cat “hello world”    lolcat</code></p>
+<h3 id="cmatrix"><a href="#cmatrix" class="headerlink" title="cmatrix"></a>cmatrix</h3><p>终端打印矩阵</p>
+<h3 id="Weather-Indicator-Applet-天气预报"><a href="#Weather-Indicator-Applet-天气预报" class="headerlink" title="Weather Indicator Applet (天气预报)"></a>Weather Indicator Applet (天气预报)</h3><p>安装命令：</p>
+<p><code>sudo apt-get install indicator-weather</code></p>
+<h3 id="ClassicMenu"><a href="#ClassicMenu" class="headerlink" title="ClassicMenu"></a>ClassicMenu</h3><p>经典的 GNOME2 菜单, 安装命令：</p>
+<p><code>sudo apt-add-repository ppa:diesch/testing</code></p>
+<p><code>sudo apt-get update</code></p>
+<p><code>sudo apt-get install classicmenu-indicator</code></p>
+<h3 id="Caffeine（咖啡因）"><a href="#Caffeine（咖啡因）" class="headerlink" title="Caffeine（咖啡因）"></a>Caffeine（咖啡因）</h3><p>你怎样确保你的电脑不会在放一部精彩的电影中途突然休眠呢？Caffeine 会帮助你解决这个问题。当然，你并不需要为你的电脑泡一杯咖啡。你只需要安装一个轻量级的指示器 —— Caffeine。只要当前你是全屏模式，它就会禁用你的屏幕保护程序、锁屏程序，让你的电脑不会因为没有在任务中而进入睡眠模式。</p>
+<p><code>sudo add-apt-repository ppa:caffeine-developers/ppa</code></p>
+<p><code>sudo apt-get update</code></p>
+<p><code>sudo apt-get install caffeine</code></p>
+<p><code>sudo apt-get install libappindicator3-1 gir1.2-appindicator3-0.1</code></p>
+<h3 id="gparted"><a href="#gparted" class="headerlink" title="gparted"></a>gparted</h3><p>格式化、分区工具</p>
+<h3 id="cheat"><a href="#cheat" class="headerlink" title="cheat"></a>cheat</h3><p>Linux 命令备忘清单，<a href="https://github.com/chrisallenlane/cheat" target="_blank" rel="external">https://github.com/chrisallenlane/cheat</a></p>
+<h3 id="htop"><a href="#htop" class="headerlink" title="htop"></a>htop</h3><p>htop 是一个更加先进的交互式的实时监控工具。htop 与 top 命令非常相似，但是他有一些非常丰富的功能，如用户友好界面管理进程、快捷键、横向和纵向进程等更多的。htop 是一个第三方工具并不包括在 Linux 系统中，你需要使用包管理工具进行安装。</p>
+<h3 id="Tickeys"><a href="#Tickeys" class="headerlink" title="Tickeys"></a>Tickeys</h3><p>Tickeys是一款很强大的键盘音效软件。Tickeys 自带多种声音效果方案，有打字机、冒泡、机械键盘、剑气等。每天都听着键盘声音是不是很烦闷，现在有了这款神器你就可以瞬间帮助自己的键盘加上逼格特效。<a href="https://github.com/BillBillBillBill/Tickeys-linux/" target="_blank" rel="external">https://github.com/BillBillBillBill/Tickeys-linux/</a></p>
+<h3 id="festival"><a href="#festival" class="headerlink" title="festival"></a>festival</h3><p>语音合成软件,安装使用参考:<a href="https://linuxtoy.org/archives/festival_on_ubuntu.html" target="_blank" rel="external">https://linuxtoy.org/archives/festival_on_ubuntu.html</a></p>
+<h3 id="autossh"><a href="#autossh" class="headerlink" title="autossh"></a>autossh</h3><p>自动重连 ssh</p>
+<h3 id="SysPeek"><a href="#SysPeek" class="headerlink" title="SysPeek"></a>SysPeek</h3><p>系统指示器, 安装：</p>
+<p><code>sudo add-apt-repository ppa:nilarimogard/webupd8</code><br><code>sudo apt-get update</code><br><code>sudo apt-get install syspeek</code></p>
+<h3 id="lnav"><a href="#lnav" class="headerlink" title="lnav"></a>lnav</h3><p>lnav 工具是在终端界面看日志的神器</p>
+<h3 id="proxychains"><a href="#proxychains" class="headerlink" title="proxychains"></a>proxychains</h3><p>命令行翻墙代理， 配置文件 /etc/proxychains.conf</p>
+<h3 id="Touchpad-Indicator-触摸板开关"><a href="#Touchpad-Indicator-触摸板开关" class="headerlink" title="Touchpad Indicator (触摸板开关)"></a>Touchpad Indicator (触摸板开关)</h3><p><code>sudo add-apt-repository ppa:atareao/atareao</code><br><code>sudo apt-get update</code><br><code>sudo apt-get install touchpad-indicator</code></p>
+<h3 id="Keylock-Application-Indicator-（显示大写键状态）"><a href="#Keylock-Application-Indicator-（显示大写键状态）" class="headerlink" title="Keylock Application Indicator （显示大写键状态）"></a>Keylock Application Indicator （显示大写键状态）</h3><p><code>sudo add-apt-repository ppa:tsbarnes/indicator-keylock</code><br><code>sudo apt-get update</code><br><code>sudo apt-get install indicator-keylock</code></p>
+<h3 id="apparmor"><a href="#apparmor" class="headerlink" title="apparmor"></a>apparmor</h3><p>Linux 进程权限控制</p>
+<h3 id="Fabric"><a href="#Fabric" class="headerlink" title="Fabric"></a>Fabric</h3><p>Fabric 是一个用 Python 编写的命令行工具库，它可以帮助系统管理员高效地执行某些任务，比如通过 SSH 到多台机器上执行某些命令，远程布署应用等。</p>
+<h3 id="Dia"><a href="#Dia" class="headerlink" title="Dia"></a>Dia</h3><p>跨平台的流程图绘制程序, 基于GTK的图形（diagram）绘制程序，适用于Linux, Unix和Windows, 下载：<a href="https://sourceforge.net/projects/dia-installer/" target="_blank" rel="external">https://sourceforge.net/projects/dia-installer/</a></p>
+<h3 id="Taskwarrior"><a href="#Taskwarrior" class="headerlink" title="Taskwarrior"></a>Taskwarrior</h3><p>TASKWARRIOR 是一个很棒的命令行 TODO 工具。Ubuntu安装：</p>
+<p><code>sudo apt-get install task</code><br>Mac 安装：</p>
+<p><code>brew install task</code></p>
+<h3 id="Python-Sphinx"><a href="#Python-Sphinx" class="headerlink" title="Python Sphinx"></a>Python Sphinx</h3><p>Sphinx 是一个非常棒的文档的工具，它采用 reStructuredText 标记语言编写文档，然后可以将文档导出成 html、pdf 等格式。中文参考文档。</p>
+<p>安装：</p>
+<p><code>pip install sphinx</code></p>
+<h3 id="ACK"><a href="#ACK" class="headerlink" title="ACK"></a>ACK</h3><p>ACK 比 grep 更好的搜索工具。</p>
+<h3 id="Electron"><a href="#Electron" class="headerlink" title="Electron"></a>Electron</h3><p>Electron 框架的前身是 Atom Shell，可以让你写使用 JavaScript，HTML 和 CSS 构建跨平台的桌面应用程序。它是基于io.js 和 Chromium 开源项目，并用于在 Atom 编辑器中。Electron 是开源的，由 GitHub 维护，有一个活跃的社区。最重要的是，Electron 应用服务构建和运行在 Mac，Windows 和 Linux。</p>
+<h3 id="Speedtest"><a href="#Speedtest" class="headerlink" title="Speedtest"></a>Speedtest</h3><p>带宽测试工具, 安装:</p>
+<p><code>pip install speedtest-cli</code><br>也可以直接访问网页版: Speedtest.net</p>
+<h3 id="paste"><a href="#paste" class="headerlink" title="paste"></a>paste</h3><p>将文件按行并列显示：</p>
+<p><code>paste test.txt test2.txt test3.txt</code></p>
+<h3 id="expand"><a href="#expand" class="headerlink" title="expand"></a>expand</h3><p>将文件的制表符（TAB）转换为空白字符（space），将结果显示到标准输出设备。-t 参数可以指定制表符的参数。示例：</p>
+<p><code>expand -t 4 test.txt &gt; test1.txt</code></p>
+<h3 id="抓包工具"><a href="#抓包工具" class="headerlink" title="抓包工具"></a>抓包工具</h3><p>charles<br>Fiddler<br>wireshark<br>mitmproxy</p>
+<h3 id="pwgen"><a href="#pwgen" class="headerlink" title="pwgen"></a>pwgen</h3><p>一个生成随机、无特殊含义但可以正常拼读的密码。安装：</p>
+<p><code>sudo apt-get install pwgen</code><br>生成14位不含大写字母的密码：</p>
+<p><code>pwgen -A 14</code></p>
+<p>参数：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">-c 或 --capitalize 生成的密码中至少包含一个大写字母</div><div class="line">-A 或 --no-capitalize 生成的密码中不含大写字母</div><div class="line">-n 或 --numerals 生成的密码中至少包含一个数字</div><div class="line">-0 或 --no-numerals 生成的密码中不含数字</div><div class="line">-y 或 --symbols 生成的密码中至少包含一个特殊字符</div><div class="line">-s 或 --secure 生成一个完全随机的密码</div><div class="line">-B 或 --ambiguous 生成的密码中不含易混淆字符</div><div class="line">-h 或 --<span class="built_in">help</span> 输出帮助信息</div><div class="line">-H 或 --sha1=path/to/file[<span class="comment">#seed] 使用指定文件的 sha1 哈希值作为随机生成器</span></div><div class="line">-C 按列输出生成的密码</div><div class="line">-1 不按列输出生成的密码</div><div class="line">-v 或 --no-vowels 不使用任何元音，以免意外生成让人讨厌的单词</div></pre></td></tr></table></figure></p>
+<h3 id="Zeal"><a href="#Zeal" class="headerlink" title="Zeal"></a>Zeal</h3><p>Zeal 是一个简单的离线 API 文档浏览器，仿照 Dash（一个 OSX 应用） 写成，能在 Linux 和 Windows 上使用。<br>Linux 下安装和使用可以参考: <a href="http://xmodulo.com/browse-search-api-documentation-offline-linux.html" target="_blank" rel="external">http://xmodulo.com/browse-search-api-documentation-offline-linux.html</a></p>
+<h3 id="ack"><a href="#ack" class="headerlink" title="ack"></a>ack</h3><p>Ack 是比 grep 更快的文本搜索工具</p>
+<h3 id="Ag"><a href="#Ag" class="headerlink" title="Ag"></a>Ag</h3><p>Ag 是比 grep、ack 更快的搜索工具</p>
+<h3 id="ccat"><a href="#ccat" class="headerlink" title="ccat"></a>ccat</h3><p>Ccat 是 cat 的着色版本，可以对输出文本进行语法高亮</p>
+<h3 id="Insomnia"><a href="#Insomnia" class="headerlink" title="Insomnia"></a>Insomnia</h3><p>Insomnia 跨平台的、免费的 REST 客户端</p>
+
+        </div>
+        <footer class="article-footer">
+            
+
+
+    <div class="a2a_kit a2a_default_style">
+    <a class="a2a_dd" href="https://www.addtoany.com/share">Share</a>
+    <span class="a2a_divider"></span>
+    <a class="a2a_button_facebook"></a>
+    <a class="a2a_button_twitter"></a>
+    <a class="a2a_button_google_plus"></a>
+    <a class="a2a_button_pinterest"></a>
+    <a class="a2a_button_tumblr"></a>
+</div>
+<script type="text/javascript" src="//static.addtoany.com/menu/page.js"></script>
+<style>
+    .a2a_menu {
+        border-radius: 4px;
+    }
+    .a2a_menu a {
+        margin: 2px 0;
+        font-size: 14px;
+        line-height: 16px;
+        border-radius: 4px;
+        color: inherit !important;
+        font-family: 'Microsoft Yahei';
+    }
+    #a2apage_dropdown {
+        margin: 10px 0;
+    }
+    .a2a_mini_services {
+        padding: 10px;
+    }
+    a.a2a_i,
+    i.a2a_i {
+        width: 122px;
+        line-height: 16px;
+    }
+    a.a2a_i .a2a_svg,
+    a.a2a_more .a2a_svg {
+        width: 16px;
+        height: 16px;
+        line-height: 16px;
+        vertical-align: top;
+        background-size: 16px;
+    }
+    a.a2a_i {
+        border: none !important;
+    }
+    a.a2a_menu_show_more_less {
+        margin: 0;
+        padding: 10px 0;
+        line-height: 16px;
+    }
+    .a2a_mini_services:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+    .a2a_mini_services{*+height:1%;}
+</style>
+
+
+        </footer>
+    </div>
+</article>
+
+    <section id="comments">
+    
+        
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+
+    
+    </section>
+
+
+                        </div>
+                    </section>
+                    <aside id="sidebar">
+    <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
+    <div class="sidebar-top">
+        <p>关注我 :</p>
+        <ul class="social-links">
+            
+                
+                <li>
+                    <a class="social-tooltip" title="twitter" href="https://twitter.com/civic_hanz" target="_blank">
+                        <i class="icon fa fa-twitter"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="facebook" href="https://www.facebook.com/yer.xiaoyao" target="_blank">
+                        <i class="icon fa fa-facebook"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="google-plus" href="https://plus.google.com/111575769836214006428" target="_blank">
+                        <i class="icon fa fa-google-plus"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="github" href="https://github.com/yangeren" target="_blank">
+                        <i class="icon fa fa-github"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="weibo" href="https://weibo.com/yangeren" target="_blank">
+                        <i class="icon fa fa-weibo"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="rss" href="/atom.xml" target="_blank">
+                        <i class="icon fa fa-rss"></i>
+                    </a>
+                </li>
+                
+            
+        </ul>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+        <a href="/2016/12/28/批量删除redis-keys/" id="article-nav-newer" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">下一篇</strong>
+        <p class="article-nav-title">
+        
+            批量删除redis keys
+        
+        </p>
+        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
+    </a>
+    
+    
+        <a href="/2016/12/21/Unit7-The-Sampler/" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">上一篇</strong>
+        <p class="article-nav-title">Unit7: The Sampler</p>
+        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+        </a>
+    
+</nav>
+
+    
+    <div class="widgets-container">
+        
+            
+                
+    <div class="widget-wrap">
+        <h3 class="widget-title">最新文章</h3>
+        <div class="widget">
+            <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2017/11/06/Use-urlparse-to-change-the-url/" class="thumbnail">
+    
+    
+        <span style="background-image:url(http://oi1wvrjc2.bkt.clouddn.com/17-9-26/66144228.jpg)" alt="使用urlparse修改url" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/python/">python</a></p>
+                            <p class="item-title"><a href="/2017/11/06/Use-urlparse-to-change-the-url/" class="title">使用urlparse修改url</a></p>
+                            <p class="item-date"><time datetime="2017-11-06T09:39:20.000Z" itemprop="datePublished">2017-11-06</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2017/11/02/Python-external-script-calls-the-Django-project-model-table/" class="thumbnail">
+    
+    
+        <span style="background-image:url(http://oi1wvrjc2.bkt.clouddn.com/17-11-2/41607477.jpg)" alt="Python外部脚本调用Django项目的Model" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/django/">django</a></p>
+                            <p class="item-title"><a href="/2017/11/02/Python-external-script-calls-the-Django-project-model-table/" class="title">Python外部脚本调用Django项目的Model</a></p>
+                            <p class="item-date"><time datetime="2017-11-02T16:35:59.000Z" itemprop="datePublished">2017-11-02</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2017/06/08/many-way-to-killed-ps-in-linux/" class="thumbnail">
+    
+    
+        <span style="background-image:url(http://oi1wvrjc2.bkt.clouddn.com/17-9-26/39733243.jpg)" alt="linux下一句话Kill进程" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/linux/">linux</a></p>
+                            <p class="item-title"><a href="/2017/06/08/many-way-to-killed-ps-in-linux/" class="title">linux下一句话Kill进程</a></p>
+                            <p class="item-date"><time datetime="2017-06-08T17:31:15.000Z" itemprop="datePublished">2017-06-08</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2017/05/15/sense8-in-our-heart/" class="thumbnail">
+    
+    
+        <span style="background-image:url(http://oi1wvrjc2.bkt.clouddn.com/17-5-15/76076106-file_1494828659527_1781d.png)" alt="sense8 &amp; what&#39;s up~" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/life/">life</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/life/精彩美剧/">精彩美剧</a></p>
+                            <p class="item-title"><a href="/2017/05/15/sense8-in-our-heart/" class="title">sense8 &amp; what&#39;s up~</a></p>
+                            <p class="item-date"><time datetime="2017-05-15T14:07:53.000Z" itemprop="datePublished">2017-05-15</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2017/05/12/show-connect-user-count-on-shadowsocks-server/" class="thumbnail">
+    
+    
+        <span style="background-image:url(http://i4.buimg.com/588926/d4cece95e36ac2ae.png)" alt="查看shadowsocks服务器的用户连接数" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/linux/">linux</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/linux/vps/">vps</a></p>
+                            <p class="item-title"><a href="/2017/05/12/show-connect-user-count-on-shadowsocks-server/" class="title">查看shadowsocks服务器的用户连接数</a></p>
+                            <p class="item-date"><time datetime="2017-05-12T16:24:21.000Z" itemprop="datePublished">2017-05-12</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">分类</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/English/">English</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/django/">django</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/life/">life</a><span class="category-list-count">3</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/life/精彩美剧/">精彩美剧</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/life/高分电影/">高分电影</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/linux/">linux</a><span class="category-list-count">8</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/linux/ubuntu/">ubuntu</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/linux/vps/">vps</a><span class="category-list-count">2</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/python/">python</a><span class="category-list-count">16</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/python/django/">django</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/python/标准/">标准</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/python/设计模式/">设计模式</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/redis/">redis</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/test/">test</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/总结/">总结</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/自动化/">自动化</a><span class="category-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">归档</h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/11/">十一月 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/06/">六月 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/05/">五月 2017</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/04/">四月 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/02/">二月 2017</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">一月 2017</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">十二月 2016</a><span class="archive-list-count">22</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-float">
+        <h3 class="widget-title">标签云</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/English/" style="font-size: 10px;">English</a> <a href="/tags/PIL/" style="font-size: 10px;">PIL</a> <a href="/tags/Remote/" style="font-size: 10px;">Remote</a> <a href="/tags/Thunderbird/" style="font-size: 10px;">Thunderbird</a> <a href="/tags/UI自动化/" style="font-size: 10px;">UI自动化</a> <a href="/tags/action/" style="font-size: 10px;">action</a> <a href="/tags/celery/" style="font-size: 12.5px;">celery</a> <a href="/tags/django/" style="font-size: 17.5px;">django</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/gunicorn/" style="font-size: 10px;">gunicorn</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/jquery/" style="font-size: 10px;">jquery</a> <a href="/tags/linux/" style="font-size: 10px;">linux</a> <a href="/tags/linux-ubuntu-rsa认证/" style="font-size: 10px;">linux, ubuntu, rsa认证</a> <a href="/tags/many-to-many/" style="font-size: 10px;">many-to-many</a> <a href="/tags/model/" style="font-size: 10px;">model</a> <a href="/tags/modeladmin/" style="font-size: 10px;">modeladmin</a> <a href="/tags/python/" style="font-size: 20px;">python</a> <a href="/tags/python-unittest-test/" style="font-size: 10px;">python unittest test</a> <a href="/tags/redis/" style="font-size: 10px;">redis</a> <a href="/tags/selenium/" style="font-size: 10px;">selenium</a> <a href="/tags/sense8/" style="font-size: 10px;">sense8</a> <a href="/tags/shadowsocks/" style="font-size: 12.5px;">shadowsocks</a> <a href="/tags/sort/" style="font-size: 10px;">sort</a> <a href="/tags/sorted/" style="font-size: 10px;">sorted</a> <a href="/tags/supervisor/" style="font-size: 10px;">supervisor</a> <a href="/tags/ubuntu/" style="font-size: 15px;">ubuntu</a> <a href="/tags/url/" style="font-size: 10px;">url</a> <a href="/tags/urlparse/" style="font-size: 10px;">urlparse</a> <a href="/tags/vpn/" style="font-size: 12.5px;">vpn</a> <a href="/tags/vps/" style="font-size: 12.5px;">vps</a> <a href="/tags/what-s-up/" style="font-size: 10px;">what's up</a> <a href="/tags/二叉树/" style="font-size: 10px;">二叉树</a> <a href="/tags/北京工作居住证/" style="font-size: 10px;">北京工作居住证</a> <a href="/tags/单例/" style="font-size: 10px;">单例</a> <a href="/tags/地球脉动/" style="font-size: 10px;">地球脉动</a> <a href="/tags/复习/" style="font-size: 10px;">复习</a> <a href="/tags/常用工具/" style="font-size: 10px;">常用工具</a> <a href="/tags/总结/" style="font-size: 10px;">总结</a> <a href="/tags/排序/" style="font-size: 10px;">排序</a> <a href="/tags/数据结构/" style="font-size: 10px;">数据结构</a> <a href="/tags/文件/" style="font-size: 10px;">文件</a> <a href="/tags/用例/" style="font-size: 10px;">用例</a> <a href="/tags/联合唯一索引/" style="font-size: 10px;">联合唯一索引</a> <a href="/tags/自动化/" style="font-size: 10px;">自动化</a> <a href="/tags/英语/" style="font-size: 10px;">英语</a> <a href="/tags/虚拟语气/" style="font-size: 10px;">虚拟语气</a> <a href="/tags/设计模式/" style="font-size: 10px;">设计模式</a> <a href="/tags/读写/" style="font-size: 10px;">读写</a> <a href="/tags/迭代/" style="font-size: 10px;">迭代</a> <a href="/tags/递归/" style="font-size: 10px;">递归</a> <a href="/tags/风格/" style="font-size: 10px;">风格</a> <a href="/tags/高分电影/" style="font-size: 10px;">高分电影</a>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">链接</h3>
+        <div class="widget">
+            <ul>
+                
+                    <li>
+                        <a href="http://sugar.yer.pub">Sugar-run</a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+
+            
+        
+    </div>
+</aside>
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+    <div class="container">
+        <div class="container-inner">
+            <a id="back-to-top" href="javascript:;"><i class="icon fa fa-angle-up"></i></a>
+            <div class="credit">
+                <h1 class="logo-wrap">
+                    <a href="/" class="logo"></a>
+                </h1>
+                <p>&copy; 2017 Ouroporos</p>
+                <p>Powered by <a href="//hexo.io/" target="_blank">Hexo</a>. Theme by <a href="//github.com/ppoffice" target="_blank">PPOffice</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+        
+    
+    <script>
+    var disqus_shortname = 'ouroporos';
+    
+    
+    var disqus_url = 'http://www.candypapi.com/2016/12/28/ubuntu-常用工具/';
+    
+    (function() {
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+
+
+
+
+    
+        <script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-share.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-video.min.js"></script>
+    
+    
+        <script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+    
+    
+
+
+
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
+
+    </div>
+</body>
+</html>
