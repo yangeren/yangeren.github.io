@@ -25,6 +25,8 @@ gem install travis
 travis encrypt -r owner/repo GH_Token=Your_Personal_Access_Token
 ```
 
+### 使用同一仓库的分支做为源码库
+
 
 ### 遇到问题
 
