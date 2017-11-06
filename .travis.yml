@@ -1,0 +1,40 @@
+language: node_js
+node_js: stable
+
+# Travis-CI Caching
+cache:
+  directories:
+    - node_modules
+
+before_install:
+- npm install -g hexo-cli # 安装 hexo
+
+install:
+  - npm install hexo-search --save
+  - npm install hexo-generator-sitemap --save
+  - npm install hexo-generator-feed --save
+
+#before_script:
+#  - git clone https://github.com/ppoffice/hexo-theme-hueman.git themes/hueman # 安装主题插件
+
+script:
+  - hexo cl  #清除
+  - hexo g  #生成
+
+after_script:
+  - cd public
+  - git init
+  - git config user.name "yangeren"
+  - git config user.email "xiaoyaoyangeren@163.com"
+  - git add .
+  - git commit -m "Auto deploy from Travis-CI."
+  - git push --force --quiet "https://$GH_Token@github.com/$GH_REPO.git" master:master
+
+branches:
+  only:
+    - master
+
+env:
+  global:
+    - GH_REPO: yangeren/yangeren.github.io
+    - secure: "LDI3ZLTfp1aPQQM8qBfwJ+lo8gYZ6IBsUfU3Skl3rdBsoR7XoRnzodXNXJb6j/BTmyTJ054NCmfuqpq4KHOzrvrYxjyvV55baUeol+UzTdbh2IVRVznsu+8C0HTewi2lkWU0WTKyicc2uilmu2R1tS4+lQMiBn26WvlfOrI4F5tKGd8AZdJdVrTh9xkv1z86irrfoJDBgpoIt8qppc5dq1Fqo6GiW73LdpgJofwPltLL8WIScu1ini7GPjysInEE0Vi2EIrCkb6D5PavnRTQopQeytSog27JS4DQxDSYklNu5EhshgbQe51nmm9mmCv46/T1+wn5Bmo1yVk4mLyWRxTh+qjcv/cYnsqrTUbgrH8Mv0pgXIf635G0Ua2pVVpcfnHdQPxwgdmAuWJwNIrWdfuGokh0WI4lNhzl2aokJdm6wxiCtiOBJDhAqNFeeOpRQ9Pabm4MbbzN8Q7vkMQWmL2nhhZc3NDO+TDuL+pVBnSCv6RDd8AldqCzoWEeNFZiZ3Zv6T4bTUYD6dEUjlv+9gL94F+3Dz2MQtA8XaImh9LsA17qFtWwTumBXe0XWV9KSBUMAVP6iJgg0nyBQ/CckKn5a24jDM7kWn65uQlVVFNWleGi72lqhqF8vBUNEtcX6JRMpiQk1XqJ7Nyl+Tot8zsKTMuSDKCmmMSxngUtSa0="
