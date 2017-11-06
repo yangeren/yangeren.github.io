@@ -7,8 +7,7 @@ cache:
     - node_modules
 
 before_install:
-#- npm install -g hexo-cli # 安装 hexo
-  - npm install hexo --no-optional
+  - npm install hexo --no-optional # 安装hexo
 
 install:
   - npm install hexo-search --save
