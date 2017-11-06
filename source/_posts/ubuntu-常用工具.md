@@ -6,6 +6,7 @@ tags:
 - 常用工具
 categories:
 - linux
+permalink: ubuntu-commonly-used-tools
 ---
 
 Ubuntu常用工具
