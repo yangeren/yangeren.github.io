@@ -11,7 +11,7 @@ before_install:
 
 install:
   - hexo -v
-  - npm install hexo-search --save
+#  - npm install hexo-search --save
   - npm install hexo-generator-search --save
   - npm install hexo-generator-sitemap --save
   - npm install hexo-generator-feed --save
