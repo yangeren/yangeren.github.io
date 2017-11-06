@@ -5,4 +5,5 @@ tags:
 - auto deploy
 categories:
 - hexo
+permalink: hexo-blog-using-travis-CI-automation-release
 ---

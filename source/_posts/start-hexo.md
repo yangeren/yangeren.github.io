@@ -3,6 +3,9 @@ title: start-hexo
 date: 2016-12-09 09:40:20
 tags:
 - hexo
+categories:
+- hexo
+permalink: start-hexo
 ---
 
 # HEXO
