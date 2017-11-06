@@ -6,8 +6,6 @@ cache:
   directories:
     - node_modules
 
-sudo: enabled
-
 before_install:
   - npm install -g hexo-cli # 安装hexo
 
