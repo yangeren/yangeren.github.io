@@ -32,7 +32,7 @@ after_script:
 
 branches:
   only:
-    - master
+    - myblog
 
 env:
   global:
