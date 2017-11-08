@@ -5,8 +5,6 @@ tags:
 - linux
 categories:
 - linux
-category:
-- linux
 permalink: many-way-to-killed-ps-in-linux
 ---
 ### 查询tomcat进程

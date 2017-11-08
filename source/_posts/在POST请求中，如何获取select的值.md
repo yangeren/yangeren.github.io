@@ -3,6 +3,8 @@ title: 在POST请求中，如何获取select的值
 date: 2017-02-08 10:05:59
 tags:
 - django
+categories:
+- django
 ---
 
 ## 从页面POST请求中，如何获取select中option的值

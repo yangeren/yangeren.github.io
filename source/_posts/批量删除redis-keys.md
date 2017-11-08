@@ -5,6 +5,7 @@ tags:
 - redis
 categories:
 - redis
+permalink: batch-delete-redis-key
 ---
 ![redis](http://oi1wvrjc2.bkt.clouddn.com/17-5-12/1777863-file_1494579468916_12846.png)
 

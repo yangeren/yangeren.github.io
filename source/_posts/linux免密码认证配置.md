@@ -4,6 +4,7 @@ date: 2016-12-12 11:26:53
 tags: linux, ubuntu, rsa认证
 categories:
 - linux
+permalink: Server-password-free-certification
 ---
 # 服务器免密码认证
 ----

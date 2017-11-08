@@ -6,6 +6,7 @@ tags:
 - jquery
 categories:
 - django
+permalink: jquery-in-django-project
 ---
 django项目中jquery初探
 ====

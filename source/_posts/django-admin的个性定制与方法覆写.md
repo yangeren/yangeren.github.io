@@ -6,7 +6,6 @@ tags:
 - modeladmin
 - action
 categories:
-- python
 - django
 permalink: ModelAdmin-and-action-of-django-admin
 ---

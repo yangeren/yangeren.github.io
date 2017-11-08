@@ -6,7 +6,7 @@ tags:
 - what's up
 categories:
 - life
-- 精彩美剧
+- 美剧
 permalink: sense8-in-our-heart
 
 ---

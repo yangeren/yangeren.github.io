@@ -4,8 +4,8 @@ date: 2016-12-30 11:34:04
 tags:
 - django
 categories:
-- python
 - django
+permalink: django-use-custom-context-processor-achieve-template-global-variables
 ---
 
 django中使用自定义context processor实现模板全局变量

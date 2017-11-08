@@ -7,6 +7,7 @@ tags:
 categories:
 - life
 - 高分电影
+permalink: Planet-Earth-Season
 ---
 
 高分电影之地球脉动 Planet Earth Season
