@@ -1,9 +1,11 @@
 ---
 title: phpMyAdmin导出excel文件解析时的坑
 date: 2017-02-08 14:17:38
-tags: python
+tags: 
+- python
 categories: 
 - python
+permalink: phpMyAdmin-export-excel-file-analysis
 ---
 
 ## phpMyAdmin导出excel文件，在解析时遇到的问题

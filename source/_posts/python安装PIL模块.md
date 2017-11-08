@@ -1,6 +1,7 @@
 ---
 title: python安装PIL模块
 date: 2016-12-29 10:59:36
+thumbnail:
 tags:
 - PIL
 categories:

@@ -9,7 +9,7 @@ tags:
 
 categories:
 - test
-
+permalink: M-station-UI-automation-process
 ---
 
 M站UI自动化过程

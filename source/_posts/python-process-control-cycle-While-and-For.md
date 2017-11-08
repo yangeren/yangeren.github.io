@@ -1,11 +1,13 @@
 ---
-title: 'python process control cycle: While and For'
+title: 循环（迭代器与生成器）的那点事
 date: 2016-12-09 06:22:48
+thumbnail: http://oi1wvrjc2.bkt.clouddn.com/17-11-8/39347715.jpg?imageView2/1/w/640/h/320/format/webp/q/75|imageslim
 tags:
 - python
 - 迭代
 categories:
 - python
+permalink: python-process-control-cycle-While-and-For
 ---
 循环（迭代器与生成器）的那点事
 ======

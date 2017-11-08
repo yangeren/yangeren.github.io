@@ -1,6 +1,7 @@
 ---
 title: python中的排序操作
 date: 2016-12-15 18:25:11
+thumbnail: http://oi1wvrjc2.bkt.clouddn.com/17-11-8/81634198.jpg?imageView2/1/w/640/h/320/format/webp/q/75|imageslim
 tags:
 - python
 - 排序

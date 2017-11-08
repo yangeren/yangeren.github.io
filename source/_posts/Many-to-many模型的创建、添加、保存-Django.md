@@ -6,9 +6,12 @@ tags:
 - model
 categories:
 - django
+permalink: ManyToMany-data-types-in-Django-projects
 ---
 
 ## Django项目中ManyToMany数据类型
+
+# todo 
 
 ### 介绍ManyToMany结构
 ManyToMany即多对多关系
