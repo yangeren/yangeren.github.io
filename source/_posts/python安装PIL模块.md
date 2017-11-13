@@ -6,6 +6,7 @@ tags:
 - PIL
 categories:
 - python
+permalink: python-install-PIL-module 
 ---
 
 python安装PIL模块
