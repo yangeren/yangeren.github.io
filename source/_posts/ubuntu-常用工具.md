@@ -301,3 +301,34 @@ Ccat 是 cat 的着色版本，可以对输出文本进行语法高亮
 
 ### Insomnia
 Insomnia 跨平台的、免费的 REST 客户端
+
+----
+
+> 星期二, 14. 十一月 2017 02:03下午 更新
+
+### cairo-dock
+
+一款炫酷的启动面板：Cairo Dock
+#### 安装
+```bash
+sudo add-apt-repository ppa:cairo-dock-team/ppa
+sudo apt-get update
+sudo apt-get install cairo-dock cairo-dock-plug-ins
+```
+[glx-dock.org](http://glx-dock.org/)
+![cairo-dock](http://oi1wvrjc2.bkt.clouddn.com/17-11-14/24222208.jpg)
+
+### f.lux
+
+屏幕去蓝光
+
+#### 安装
+```bash
+sudo add-apt-repository ppa:nathan-renniewaldock/flux
+sudo apt-get update
+sudo apt-get install fluxgui
+```
+[f.lux](https://justgetflux.com/)
+![f.lux](http://oi1wvrjc2.bkt.clouddn.com/17-11-14/90305063.jpg)
+
+
