@@ -6,6 +6,7 @@ tags:
 categories:
 - git
 permalink: git-switch-the-remote-repository-address
+thumbnail: http://oi1wvrjc2.bkt.clouddn.com/17-11-28/4082798.jpg
 ---
 
 git 切换远程仓库地址

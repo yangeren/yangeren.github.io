@@ -6,6 +6,7 @@ tags:
 - Spring
 catetories:
 - Java
+thumbnail: http://oi1wvrjc2.bkt.clouddn.com/17-11-28/91856161.jpg
 permalink: Hand-First-Spring-Boot
 ---
 

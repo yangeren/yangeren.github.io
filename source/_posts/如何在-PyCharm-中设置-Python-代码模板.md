@@ -2,6 +2,11 @@
 title: 如何在 PyCharm 中设置 Python 代码模板
 date: 2017-11-07 14:48:33
 tags:
+- pycharm
+categories:
+- python
+thumbnail: http://oi1wvrjc2.bkt.clouddn.com/17-11-28/66017375.jpg
+permalink: How-To-Set-Pycharm-Model
 ---
 
 
