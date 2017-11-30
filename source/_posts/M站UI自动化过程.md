@@ -6,9 +6,8 @@ tags:
 - selenium
 - Remote
 - UI自动化
-
 categories:
-- test
+- 测试
 permalink: M-station-UI-automation-process
 ---
 

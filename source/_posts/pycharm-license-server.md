@@ -2,7 +2,8 @@
 title: pycharm license server
 date: 2017-04-09 15:52:58
 tags: 
-- python
+- pycharm
+- license
 permalink: how-to-get-pycharm-license
 thumbnail: http://oi1wvrjc2.bkt.clouddn.com/17-5-2/62310626-file_1493692370185_166d9.jpg?imageView2/1/w/900/h/563/format/webp/q/75|imageslim
 categories:

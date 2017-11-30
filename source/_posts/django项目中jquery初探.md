@@ -5,6 +5,7 @@ tags:
 - django
 - jquery
 categories:
+- python
 - django
 permalink: jquery-in-django-project
 ---

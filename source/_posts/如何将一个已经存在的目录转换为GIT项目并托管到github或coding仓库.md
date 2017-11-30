@@ -5,6 +5,7 @@ tags:
 - git
 categories:
 - linux
+- git
 permalink: how-to-add-exist-project-to-github-or-coding
 thumbnail: http://oi1wvrjc2.bkt.clouddn.com/17-5-2/93220999-file_1493717085156_d3c4.png
 ---

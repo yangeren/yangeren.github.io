@@ -3,10 +3,11 @@ title: Python外部脚本调用Django项目的Model
 date: 2017-11-02 16:35:59
 thumbnail: http://oi1wvrjc2.bkt.clouddn.com/17-11-8/49753235.jpg
 tags: 
-- python
+- model
 - django
 permalink: Python-external-script-calls-the-Django-project-model-table
 categories: 
+- python
 - django
 ---
 

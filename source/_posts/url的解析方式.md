@@ -2,8 +2,7 @@
 title: url的解析方式
 date: 2017-02-20 09:23:58
 tags:
-- python
-- url
+- urlparse
 categories:
 - python
 permalink: Analysis-of-the-url

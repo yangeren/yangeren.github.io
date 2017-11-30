@@ -7,6 +7,7 @@ tags:
 - 二叉树
 categories:
 - python
+- 设计模式
 ---
 
 数据结构之二叉树

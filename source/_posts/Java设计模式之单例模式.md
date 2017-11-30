@@ -2,10 +2,10 @@
 title: Java设计模式之单例模式
 date: 2017-11-24 11:21:36
 tags: 
-- Java
+- java
 - 设计模式
 categories:
-- Java
+- java
 thumbnail: http://oi1wvrjc2.bkt.clouddn.com/17-11-28/72497815.jpg
 permalink: Single-mode-Java-Design-Pattern
 ---

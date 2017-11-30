@@ -2,7 +2,8 @@
 title: linux下一句话Kill进程
 date: 2017-06-08 17:31:15
 tags: 
-- linux
+- pgrep
+- kill
 categories:
 - linux
 permalink: many-way-to-killed-ps-in-linux

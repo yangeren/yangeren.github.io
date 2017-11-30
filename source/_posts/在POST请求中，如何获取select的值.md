@@ -4,6 +4,7 @@ date: 2017-02-08 10:05:59
 tags:
 - django
 categories:
+- python
 - django
 ---
 

@@ -1,8 +1,10 @@
 ---
 title: django 添加联合唯一索引
 date: 2017-02-16 16:25:29
-tags: 联合唯一索引
+tags: 
+- 联合唯一索引
 categories: 
+- python
 - django
 permalink: Django-add-contact-to-unique-index
 thumbnail:

@@ -4,6 +4,7 @@ date: 2016-12-28 18:49:19
 tags:
 - redis
 categories:
+- 数据库
 - redis
 permalink: batch-delete-redis-key
 ---

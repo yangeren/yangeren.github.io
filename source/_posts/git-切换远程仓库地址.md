@@ -4,6 +4,7 @@ date: 2017-11-06 18:45:39
 tags: 
 - git
 categories:
+- linux
 - git
 permalink: git-switch-the-remote-repository-address
 thumbnail: http://oi1wvrjc2.bkt.clouddn.com/17-11-28/4082798.jpg

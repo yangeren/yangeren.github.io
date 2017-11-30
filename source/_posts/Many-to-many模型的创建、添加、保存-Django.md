@@ -4,7 +4,9 @@ date: 2017-02-16 14:59:21
 tags:
 - many-to-many
 - model
+- django
 categories:
+- python
 - django
 permalink: ManyToMany-data-types-in-Django-projects
 ---
