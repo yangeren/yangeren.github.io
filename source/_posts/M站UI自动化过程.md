@@ -9,11 +9,12 @@ tags:
 categories:
 - 测试
 permalink: M-station-UI-automation-process
+thumbnail: http://oi1wvrjc2.bkt.clouddn.com/17-5-9/20021003-file_1494301348754_cb1.png!blogtitle
 ---
 
 M站UI自动化过程
 ====
-![](http://oi1wvrjc2.bkt.clouddn.com/17-5-9/20021003-file_1494301348754_cb1.png)
+
 ### 环境配置
 
 #### 安装python
