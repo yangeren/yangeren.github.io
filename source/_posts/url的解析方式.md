@@ -58,6 +58,12 @@ Out[41]: {'password': 'p', 'username': 'w'}
 
 ```
 
+#### 如何将格式化后的query数据恢复成原来的网址?
+```ipython
+import urllib
+urllib.urlencode(params, doseq=True)
+```
+
 #### 带参数据GET请求
 ```python
 import requests
