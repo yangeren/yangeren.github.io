@@ -3,8 +3,8 @@ title: Puppeteer尝试
 date: 2018-07-11 15:27:21
 tags:
 categories:
-thumbnail:
-permalink:
+thumbnail: http://oi1wvrjc2.bkt.clouddn.com/18-7-11/67319700.jpg
+permalink: Getting-Started-With-Puppeteer-And-Chrome-Handless-For-Web-Scraping
 ---
 
 WEB自动化之Puppeteer尝试
