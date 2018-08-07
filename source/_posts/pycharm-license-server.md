@@ -10,6 +10,15 @@ categories:
 - python
 ---
 
+
+## 18年8月7日更新 有条件还是自己搭server吧，大多都禁了
+
+放个地址，教程自行搜索。
+
+链接：https://pan.baidu.com/s/1lRU0leSSGl5p3Cv3ubX3rQ 密码：ui96
+
+------
+
 # 牛人搞的license server，转一发
 
 > 搭了一个支持JetBrains全系列产品的License Server，理论上支持以下所有版本：
