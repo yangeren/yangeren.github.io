@@ -9,7 +9,7 @@ permalink: Analysis-of-the-url-python2&python3
 ---
 
 ## URL的解析方式，简单有效（包含python2.* & python3.*版本）
-![](http://oi1wvrjc2.bkt.clouddn.com/17-9-26/66144228.jpg)
+![](http://image.candymami.com/17-9-26/66144228.jpg)
 ### URL的组成
 #### 举例url：
 <!--more-->

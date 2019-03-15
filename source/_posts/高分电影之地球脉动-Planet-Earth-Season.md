@@ -8,7 +8,7 @@ categories:
 - life
 - 高分电影
 permalink: Planet-Earth-Season
-thumbnail: http://oi1wvrjc2.bkt.clouddn.com/17-11-28/84614117.jpg
+thumbnail: http://image.candymami.com/17-11-28/84614117.jpg
 ---
 
 高分电影之地球脉动 Planet Earth Season
@@ -19,7 +19,7 @@ thumbnail: http://oi1wvrjc2.bkt.clouddn.com/17-11-28/84614117.jpg
 > 这部电影不用多说，通过独立鱼了解到的，看豆瓣评分就知道了：[豆瓣评分9.9](https://movie.douban.com/subject/26733371/)
 一共六集，每一集都很震撼，每一个镜头都非常精彩，每一个画面都是壁纸，精彩至极，美轮美奂。
 
-![地球脉动](http://oi1wvrjc2.bkt.clouddn.com/17-11-28/18354933.jpg)
+![地球脉动](http://image.candymami.com/17-11-28/18354933.jpg)
 <!--more-->
 我大电影天堂的资源，记录上；而且貌似腾讯视频把版权买下来了。
 

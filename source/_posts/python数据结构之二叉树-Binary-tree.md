@@ -18,7 +18,7 @@ categories:
 
 如图：
 
-![二叉树](http://oi1wvrjc2.bkt.clouddn.com/16-12-16/27272502-file_1481867029975_ef8b.jpg)
+![二叉树](http://image.candymami.com/16-12-16/27272502-file_1481867029975_ef8b.jpg)
 <!--more-->
 
 ## 二叉树的实现

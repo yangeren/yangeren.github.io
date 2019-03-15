@@ -14,7 +14,7 @@ permalink: Use-urlparse-to-change-the-url
 
 ## 举例来说明
 
-![](http://oi1wvrjc2.bkt.clouddn.com/17-9-26/66144228.jpg)
+![](http://image.candymami.com/17-9-26/66144228.jpg)
 
 `url="https://stackoverflow.com/questions/21628852/changing-hostname-in-a-url"`
 

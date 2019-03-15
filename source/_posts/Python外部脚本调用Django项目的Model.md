@@ -1,7 +1,7 @@
 ---
 title: Python外部脚本调用Django项目的Model
 date: 2017-11-02 16:35:59
-thumbnail: http://oi1wvrjc2.bkt.clouddn.com/17-11-8/49753235.jpg
+thumbnail: http://image.candymami.com/17-11-8/49753235.jpg
 tags: 
 - model
 - django
@@ -14,7 +14,7 @@ categories:
 Python外部脚本调用Django项目的Model
 ====
 
-![django cycle](http://oi1wvrjc2.bkt.clouddn.com/17-11-2/41607477.jpg)
+![django cycle](http://image.candymami.com/17-11-2/41607477.jpg)
 ## 在django中，python脚本状态下进行调用models
 
 我们会有这样的场景，开着项目代码，想执行一个功能简单的脚本，但又想使用django简单的models调用，

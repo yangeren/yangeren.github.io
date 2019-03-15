@@ -42,7 +42,7 @@ found '<html r'"
 根据xlrd报的错，猜了一下原因，有可能导出的excel文件并不是正规的excel保存的那种；
 里面的<html就能看出来，中间是包含有html代码的，于是，用文本打开了看了一下，果然：
 
-![phpmyadmin-export-excel-file](http://oi1wvrjc2.bkt.clouddn.com/17-2-8/44364820-file_1486535637317_11f27.png)
+![phpmyadmin-export-excel-file](http://image.candymami.com/17-2-8/44364820-file_1486535637317_11f27.png)
 
 把后缀改为.html，直接就能浏览器打开了。。。果然是伪excel文件。。。
 

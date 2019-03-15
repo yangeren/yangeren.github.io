@@ -11,7 +11,7 @@ permalink: hexo-blog-using-travis-CI-automation-release
 Hexo借助travis-ci自动发布博客
 ====
 
-![travis ci](http://oi1wvrjc2.bkt.clouddn.com/17-11-6/87226994.jpg)
+![travis ci](http://image.candymami.com/17-11-6/87226994.jpg)
 
 ###认证
 

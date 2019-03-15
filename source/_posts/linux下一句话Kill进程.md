@@ -10,7 +10,7 @@ permalink: many-way-to-killed-ps-in-linux
 ---
 ### 查询tomcat进程
 
-![Control-Linux-Processes](http://oi1wvrjc2.bkt.clouddn.com/17-9-26/39733243.jpg)
+![Control-Linux-Processes](http://image.candymami.com/17-9-26/39733243.jpg)
 ```bash
 ps -ef | grep tomcat
 ps -aux | grep tomcat

@@ -6,7 +6,7 @@ tags:
 catetories:
 - python
 permalink: how-to-use-celery-running-task
-thumbnail: http://oi1wvrjc2.bkt.clouddn.com/17-5-2/87108123-file_1493712414064_6eb1.png
+thumbnail: http://image.candymami.com/17-5-2/87108123-file_1493712414064_6eb1.png
 ---
 
 Celery小试牛刀
@@ -35,7 +35,7 @@ Celery的架构由三部分组成：
 2. 任务执行单元（worker）
 3. 任务执行结果存储（task result store）
 
-![celery 组成部分](http://oi1wvrjc2.bkt.clouddn.com/18-8-14/62830101.jpg)
+![celery 组成部分](http://image.candymami.com/18-8-14/62830101.jpg)
 
 #### 安装
 

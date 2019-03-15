@@ -7,7 +7,7 @@ categories:
 - linux
 - git
 permalink: how-to-add-exist-project-to-github-or-coding
-thumbnail: http://oi1wvrjc2.bkt.clouddn.com/17-5-2/93220999-file_1493717085156_d3c4.png
+thumbnail: http://image.candymami.com/17-5-2/93220999-file_1493717085156_d3c4.png
 ---
 
 # 如何将一个已存在的目录转换为一个 GIT 项目并托管到 GITHUB/CODING 仓库

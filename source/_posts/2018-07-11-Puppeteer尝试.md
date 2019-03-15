@@ -5,7 +5,7 @@ tags:
 - puppeteer
 categories:
 - 测试
-thumbnail: http://oi1wvrjc2.bkt.clouddn.com/18-7-11/67319700.jpg
+thumbnail: http://image.candymami.com/18-7-11/67319700.jpg
 permalink: Getting-Started-With-Puppeteer-And-Chrome-Handless-For-Web-Scraping
 ---
 

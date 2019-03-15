@@ -60,7 +60,7 @@ def ids(self, obj):
 list_display = ['ids', 'eventid', 'refpveventid', 'refclickeventid', 'updatetime']
 ```
 果断妥妥的！
-![index_id_show](http://oi1wvrjc2.bkt.clouddn.com/17-2-14/94925874-file_1487041725745_ba58.png)
+![index_id_show](http://image.candymami.com/17-2-14/94925874-file_1487041725745_ba58.png)
 
 ##### 在列表中显示图片(参考网络)
 先拼html代码，然后把显示路径和显示id做为参数传入，bingo! 写法真心灵活。
@@ -135,7 +135,7 @@ def copy_action(self, request, queryset):
 
 剩下的再做一点传参，提示语修改，基本也就OK了，如图：
 
-![复制数据](http://oi1wvrjc2.bkt.clouddn.com/17-2-14/98045277-file_1487051259204_2634.png)
+![复制数据](http://image.candymami.com/17-2-14/98045277-file_1487051259204_2634.png)
 
 #### delete_action
 覆写删除actions

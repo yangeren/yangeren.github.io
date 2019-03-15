@@ -6,7 +6,7 @@ tags:
 - 设计模式
 categories:
 - java
-thumbnail: http://oi1wvrjc2.bkt.clouddn.com/17-11-28/72497815.jpg
+thumbnail: http://image.candymami.com/17-11-28/72497815.jpg
 permalink: Single-mode-Java-Design-Pattern
 ---
 

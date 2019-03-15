@@ -12,7 +12,7 @@ permalink: sense8-in-our-heart
 ---
 # 每个人心中，都有自己的sense8
 
-![](http://oi1wvrjc2.bkt.clouddn.com/17-5-15/76076106-file_1494828659527_1781d.png)
+![](http://image.candymami.com/17-5-15/76076106-file_1494828659527_1781d.png)
 
 ### 观感
 

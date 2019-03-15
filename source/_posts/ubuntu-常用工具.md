@@ -32,7 +32,7 @@ nautilus -q
 ```
 
 #### 安装完成效果图
-![效果图1](http://oi1wvrjc2.bkt.clouddn.com/16-12-28/59784456-file_1482905990308_3716.png)
+![效果图1](http://image.candymami.com/16-12-28/59784456-file_1482905990308_3716.png)
 
 
 > 以下引用
@@ -316,7 +316,7 @@ sudo apt-get update
 sudo apt-get install cairo-dock cairo-dock-plug-ins
 ```
 [glx-dock.org](http://glx-dock.org/)
-![cairo-dock](http://oi1wvrjc2.bkt.clouddn.com/17-11-14/24222208.jpg)
+![cairo-dock](http://image.candymami.com/17-11-14/24222208.jpg)
 
 ### f.lux
 
@@ -329,6 +329,6 @@ sudo apt-get update
 sudo apt-get install fluxgui
 ```
 [f.lux](https://justgetflux.com/)
-![f.lux](http://oi1wvrjc2.bkt.clouddn.com/17-11-14/90305063.jpg)
+![f.lux](http://image.candymami.com/17-11-14/90305063.jpg)
 
 

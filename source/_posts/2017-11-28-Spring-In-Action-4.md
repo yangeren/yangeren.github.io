@@ -6,6 +6,6 @@ tags:
 categories:
 - java
 - spring
-thumbnail: http://oi1wvrjc2.bkt.clouddn.com/17-11-28/30690469.jpg!blogtitle
+thumbnail: http://image.candymami.com/17-11-28/30690469.jpg!blogtitle
 permalink: Spring-In-Action-4
 ---

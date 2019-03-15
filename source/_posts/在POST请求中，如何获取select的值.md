@@ -26,5 +26,5 @@ categories:
 
 如图：
 
-![request.POST.getlist](http://oi1wvrjc2.bkt.clouddn.com/django_requsts_post_getlist.png)
+![request.POST.getlist](http://image.candymami.com/django_requsts_post_getlist.png)
 

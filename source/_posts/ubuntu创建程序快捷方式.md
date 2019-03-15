@@ -43,4 +43,4 @@ StartupWMClass=jetbrains-pycharm
 ## 运行
 将文件放入指定位置后，点击ubuntu左上角搜索输入名称，即可显示；
 如图：
-![](http://oi1wvrjc2.bkt.clouddn.com/17-5-8/19586603-file_1494231696632_14626.png)
+![](http://image.candymami.com/17-5-8/19586603-file_1494231696632_14626.png)

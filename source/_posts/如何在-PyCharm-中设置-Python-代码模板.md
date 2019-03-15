@@ -6,7 +6,7 @@ tags:
 - setting
 categories:
 - python
-thumbnail: http://oi1wvrjc2.bkt.clouddn.com/17-11-28/66017375.jpg
+thumbnail: http://image.candymami.com/17-11-28/66017375.jpg
 permalink: How-To-Set-Pycharm-Model
 ---
 

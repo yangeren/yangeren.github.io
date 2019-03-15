@@ -5,7 +5,7 @@ tags:
 - fiddler
 categories:
 - 测试
-thumbnail: http://oi1wvrjc2.bkt.clouddn.com/18-7-11/68814969.jpg!blogtitle
+thumbnail: http://image.candymami.com/18-7-11/68814969.jpg!blogtitle
 permalink: Fiddler-Unable-To-Crawl-Iphone-Packet
 ---
 
