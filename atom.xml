@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>The Golden Age</title>
+  
+  <subtitle>The golden age is before us , not behind us . (Mark Twain)</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://www.candypapi.com/"/>
+  <updated>2019-03-15T06:57:15.677Z</updated>
+  <id>http://www.candypapi.com/</id>
+  
+  <author>
+    <name>Ouroporos</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>使用Flask-Cache为页面增加缓存</title>
+    <link href="http://www.candypapi.com/2018/11/19/Use-Flash-Cache-To-Quickly-Increase-The-Cache/"/>
+    <id>http://www.candypapi.com/2018/11/19/Use-Flash-Cache-To-Quickly-Increase-The-Cache/</id>
+    <published>2018-11-19T14:05:02.000Z</published>
+    <updated>2019-03-15T06:57:15.677Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;使用Flash-Cache快速增加缓存&quot;&gt;&lt;a href=&quot;#使用Flash-Cache快速增加缓存&quot; class=&quot;headerlink&quot; title=&quot;使用Flash-Cache快速增加缓存&quot;&gt;&lt;/a&gt;使用Flash-Cache快速增加缓存&lt;/h1&gt;&lt;h3
+        
+      
+    
+    </summary>
+    
+      <category term="python" scheme="http://www.candypapi.com/categories/python/"/>
+    
+      <category term="flask" scheme="http://www.candypapi.com/categories/python/flask/"/>
+    
+    
+      <category term="python" scheme="http://www.candypapi.com/tags/python/"/>
+    
+      <category term="flask-cache" scheme="http://www.candypapi.com/tags/flask-cache/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用PyPI发布自己的轮子</title>
+    <link href="http://www.candypapi.com/2018/11/16/%E4%BD%BF%E7%94%A8PyPI%E5%8F%91%E5%B8%83%E8%87%AA%E5%B7%B1%E7%9A%84%E8%BD%AE%E5%AD%90/"/>
+    <id>http://www.candypapi.com/2018/11/16/使用PyPI发布自己的轮子/</id>
+    <published>2018-11-16T15:13:38.000Z</published>
+    <updated>2019-03-15T06:57:15.677Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;PyPI打包上传全教程&quot;&gt;&lt;a href=&quot;#PyPI打包上传全教程&quot; class=&quot;headerlink&quot; title=&quot;PyPI打包上传全教程&quot;&gt;&lt;/a&gt;PyPI打包上传全教程&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>使用jacoco测试代码覆盖率</title>
+    <link href="http://www.candypapi.com/2018/09/30/Test-Coverage-Of-Web-Project-Code-Using-Jacoco/"/>
+    <id>http://www.candypapi.com/2018/09/30/Test-Coverage-Of-Web-Project-Code-Using-Jacoco/</id>
+    <published>2018-09-30T16:24:27.000Z</published>
+    <updated>2019-03-15T06:57:15.677Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;使用jacoco测试web项目代码的覆盖率&quot;&gt;&lt;a href=&quot;#使用jacoco测试web项目代码的覆盖率&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="java" scheme="http://www.candypapi.com/categories/java/"/>
+    
+    
+      <category term="java" scheme="http://www.candypapi.com/tags/java/"/>
+    
+      <category term="jacoco" scheme="http://www.candypapi.com/tags/jacoco/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>python沙盒环境</title>
+    <link href="http://www.candypapi.com/2018/08/13/Python-Virtualenv-Environment/"/>
+    <id>http://www.candypapi.com/2018/08/13/Python-Virtualenv-Environment/</id>
+    <published>2018-08-13T16:06:22.000Z</published>
+    <updated>2019-03-15T06:57:15.677Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;使用Python的沙盒环境&quot;&gt;&lt;a href=&quot;#使用Python的沙盒环境&quot; class=&quot;headerlink&quot; title=&quot;使用Python的沙盒环境&quot;&gt;&lt;/a&gt;使用Python的沙盒环境&lt;/h2&gt;&lt;h3 id=&quot;用途-amp-安装&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="python" scheme="http://www.candypapi.com/categories/python/"/>
+    
+    
+      <category term="virtualenv" scheme="http://www.candypapi.com/tags/virtualenv/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ubuntu下定时任务的使用</title>
+    <link href="http://www.candypapi.com/2018/08/10/How-To-Use-Crontab-in-Ubuntu/"/>
+    <id>http://www.candypapi.com/2018/08/10/How-To-Use-Crontab-in-Ubuntu/</id>
+    <published>2018-08-10T10:25:09.000Z</published>
+    <updated>2019-03-15T06:57:15.677Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Crontab&quot;&gt;&lt;a href=&quot;#Crontab&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="linux" scheme="http://www.candypapi.com/categories/linux/"/>
+    
+      <category term="ubuntu" scheme="http://www.candypapi.com/categories/linux/ubuntu/"/>
+    
+    
+      <category term="crontab" scheme="http://www.candypapi.com/tags/crontab/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Puppeteer尝试</title>
+    <link href="http://www.candypapi.com/2018/07/11/Getting-Started-With-Puppeteer-And-Chrome-Handless-For-Web-Scraping/"/>
+    <id>http://www.candypapi.com/2018/07/11/Getting-Started-With-Puppeteer-And-Chrome-Handless-For-Web-Scraping/</id>
+    <published>2018-07-11T15:27:21.000Z</published>
+    <updated>2019-03-15T06:57:15.677Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;WEB自动化之Puppeteer尝试&quot;&gt;&lt;a href=&quot;#WEB自动化之Puppeteer尝试&quot; class=&quot;headerlink&quot; title=&quot;WEB自动化之Puppeteer尝试&quot;&gt;&lt;/a&gt;WEB自动化之Puppeteer尝试&lt;/h2&gt;&lt;h3
+        
+      
+    
+    </summary>
+    
+      <category term="测试" scheme="http://www.candypapi.com/categories/%E6%B5%8B%E8%AF%95/"/>
+    
+    
+      <category term="puppeteer" scheme="http://www.candypapi.com/tags/puppeteer/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>fiddler无法抓取iphone中https协议的接口</title>
+    <link href="http://www.candypapi.com/2018/06/05/Fiddler-Unable-To-Crawl-Iphone-Packet/"/>
+    <id>http://www.candypapi.com/2018/06/05/Fiddler-Unable-To-Crawl-Iphone-Packet/</id>
+    <published>2018-06-05T13:51:19.000Z</published>
+    <updated>2019-03-15T06:57:15.677Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;无法抓取iphone手机中HTTPS部分的接口&quot;&gt;&lt;a href=&quot;#无法抓取iphone手机中HTTPS部分的接口&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="测试" scheme="http://www.candypapi.com/categories/%E6%B5%8B%E8%AF%95/"/>
+    
+    
+      <category term="fiddler" scheme="http://www.candypapi.com/tags/fiddler/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>再见！2017！</title>
+    <link href="http://www.candypapi.com/2018/02/14/%E5%86%8D%E8%A7%81%EF%BC%812017%EF%BC%81/"/>
+    <id>http://www.candypapi.com/2018/02/14/再见！2017！/</id>
+    <published>2018-02-14T15:58:38.000Z</published>
+    <updated>2019-03-15T06:57:15.677Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;2017-有开心，有难过，有痛苦，有坚持，没有虚度，就此别过！&quot;&gt;&lt;a href=&quot;#2017-有开心，有难过，有痛苦，有坚持，没有虚度，就此别过！&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="总结" scheme="http://www.candypapi.com/categories/%E6%80%BB%E7%BB%93/"/>
+    
+    
+      <category term="2017" scheme="http://www.candypapi.com/tags/2017/"/>
+    
+      <category term="总结" scheme="http://www.candypapi.com/tags/%E6%80%BB%E7%BB%93/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>解决Unable to find setter method for attribute: commandName报错问题</title>
+    <link href="http://www.candypapi.com/2018/02/13/%E8%A7%A3%E5%86%B3Unable-to-find-setter-method-for-attribute-commandName%E6%8A%A5%E9%94%99%E9%97%AE%E9%A2%98/"/>
+    <id>http://www.candypapi.com/2018/02/13/解决Unable-to-find-setter-method-for-attribute-commandName报错问题/</id>
+    <published>2018-02-13T14:07:54.000Z</published>
+    <updated>2019-03-15T06:57:15.677Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Unable-to-find-setter-method-for-attribute-commandName&quot;&gt;&lt;a href=&quot;#Unable-to-find-setter-method-for-attribute-commandName&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="java" scheme="http://www.candypapi.com/categories/java/"/>
+    
+      <category term="spring" scheme="http://www.candypapi.com/categories/java/spring/"/>
+    
+    
+      <category term="spring" scheme="http://www.candypapi.com/tags/spring/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Django系统迁移</title>
+    <link href="http://www.candypapi.com/2018/01/30/Django-System-Migration/"/>
+    <id>http://www.candypapi.com/2018/01/30/Django-System-Migration/</id>
+    <published>2018-01-30T10:23:32.000Z</published>
+    <updated>2019-03-15T06:57:15.677Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;BJ自动化测试平台交接&quot;&gt;&lt;a href=&quot;#BJ自动化测试平台交接&quot; class=&quot;headerlink&quot; title=&quot;BJ自动化测试平台交接&quot;&gt;&lt;/a&gt;BJ自动化测试平台交接&lt;/h2&gt;&lt;h3 id=&quot;环境准备&quot;&gt;&lt;a href=&quot;#环境准备&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="python" scheme="http://www.candypapi.com/categories/python/"/>
+    
+      <category term="django" scheme="http://www.candypapi.com/categories/python/django/"/>
+    
+    
+      <category term="交接" scheme="http://www.candypapi.com/tags/%E4%BA%A4%E6%8E%A5/"/>
+    
+      <category term="priceapi" scheme="http://www.candypapi.com/tags/priceapi/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>如何获取python脚本所在目录位置</title>
+    <link href="http://www.candypapi.com/2017/12/27/How-To-Get-The-Real-Path-Of-Python-Script/"/>
+    <id>http://www.candypapi.com/2017/12/27/How-To-Get-The-Real-Path-Of-Python-Script/</id>
+    <published>2017-12-27T10:51:34.000Z</published>
+    <updated>2019-03-15T06:57:15.677Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div
+        
+      
+    
+    </summary>
+    
+      <category term="python" scheme="http://www.candypapi.com/categories/python/"/>
+    
+    
+      <category term="python" scheme="http://www.candypapi.com/tags/python/"/>
+    
+      <category term="path" scheme="http://www.candypapi.com/tags/path/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>查看&amp;修改ssh的端口号</title>
+    <link href="http://www.candypapi.com/2017/12/18/%E6%9F%A5%E7%9C%8B-%E4%BF%AE%E6%94%B9ssh%E7%9A%84%E7%AB%AF%E5%8F%A3%E5%8F%B7/"/>
+    <id>http://www.candypapi.com/2017/12/18/查看-修改ssh的端口号/</id>
+    <published>2017-12-18T17:50:08.000Z</published>
+    <updated>2019-03-15T06:57:15.677Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;1、本机查看开启的端口及进程&lt;br&gt;netstat -ntlp&lt;br&gt;2、远程扫描&lt;br&gt;nmap -sS 192.168.1.2 -p22&lt;br&gt;3、远程telnet&lt;br&gt;telnet ip 22&lt;/p&gt;
+&lt;p&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>生活从来不是那么简单</title>
+    <link href="http://www.candypapi.com/2017/12/05/Life-Is-Hard/"/>
+    <id>http://www.candypapi.com/2017/12/05/Life-Is-Hard/</id>
+    <published>2017-12-05T23:17:47.000Z</published>
+    <updated>2019-03-15T06:57:15.677Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;生活，从来不是那么简单&quot;&gt;&lt;a href=&quot;#生活，从来不是那么简单&quot; class=&quot;headerlink&quot; title=&quot;生活，从来不是那么简单&quot;&gt;&lt;/a&gt;生活，从来不是那么简单&lt;/h1&gt;&lt;h3 id=&quot;拼在北上&quot;&gt;&lt;a href=&quot;#拼在北上&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="life" scheme="http://www.candypapi.com/categories/life/"/>
+    
+    
+      <category term="life" scheme="http://www.candypapi.com/tags/life/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>linux下dig nslookup 的简单使用</title>
+    <link href="http://www.candypapi.com/2017/12/01/linux%E4%B8%8Bdig-nslookup-%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8/"/>
+    <id>http://www.candypapi.com/2017/12/01/linux下dig-nslookup-的简单使用/</id>
+    <published>2017-12-01T10:56:14.000Z</published>
+    <updated>2019-03-15T06:57:15.677Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>使GitHub Pages 自定义域名支持SSL</title>
+    <link href="http://www.candypapi.com/2017/12/01/%E4%BD%BFGitHub-Pages-%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E6%94%AF%E6%8C%81SSL/"/>
+    <id>http://www.candypapi.com/2017/12/01/使GitHub-Pages-自定义域名支持SSL/</id>
+    <published>2017-12-01T10:22:37.000Z</published>
+    <updated>2019-03-15T06:57:15.677Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>互联网与我的生活</title>
+    <link href="http://www.candypapi.com/2017/11/29/Internet-And-My-Life/"/>
+    <id>http://www.candypapi.com/2017/11/29/Internet-And-My-Life/</id>
+    <published>2017-11-29T09:35:11.000Z</published>
+    <updated>2019-03-15T06:57:15.677Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;互联网与我的生活-Internet-And-My-Life&quot;&gt;&lt;a href=&quot;#互联网与我的生活-Internet-And-My-Life&quot; class=&quot;headerlink&quot; title=&quot;互联网与我的生活/Internet And My
+        
+      
+    
+    </summary>
+    
+      <category term="life" scheme="http://www.candypapi.com/categories/life/"/>
+    
+      <category term="记录" scheme="http://www.candypapi.com/categories/life/%E8%AE%B0%E5%BD%95/"/>
+    
+    
+      <category term="互联网与我的生活" scheme="http://www.candypapi.com/tags/%E4%BA%92%E8%81%94%E7%BD%91%E4%B8%8E%E6%88%91%E7%9A%84%E7%94%9F%E6%B4%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>高分电影之蓝色星球</title>
+    <link href="http://www.candypapi.com/2017/11/28/BBC-The-Blue-Planet/"/>
+    <id>http://www.candypapi.com/2017/11/28/BBC-The-Blue-Planet/</id>
+    <published>2017-11-28T13:58:09.000Z</published>
+    <updated>2019-03-15T06:57:15.677Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;蓝色星球-BBC-The-Blue-Planet&quot;&gt;&lt;a href=&quot;#蓝色星球-BBC-The-Blue-Planet&quot; class=&quot;headerlink&quot; title=&quot;蓝色星球 / BBC- The Blue Planet&quot;&gt;&lt;/a&gt;蓝色星球 /
+        
+      
+    
+    </summary>
+    
+      <category term="life" scheme="http://www.candypapi.com/categories/life/"/>
+    
+      <category term="高分电影" scheme="http://www.candypapi.com/categories/life/%E9%AB%98%E5%88%86%E7%94%B5%E5%BD%B1/"/>
+    
+    
+      <category term="高分电影" scheme="http://www.candypapi.com/tags/%E9%AB%98%E5%88%86%E7%94%B5%E5%BD%B1/"/>
+    
+      <category term="蓝色星球" scheme="http://www.candypapi.com/tags/%E8%93%9D%E8%89%B2%E6%98%9F%E7%90%83/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Spring In Action 4</title>
+    <link href="http://www.candypapi.com/2017/11/28/Spring-In-Action-4/"/>
+    <id>http://www.candypapi.com/2017/11/28/Spring-In-Action-4/</id>
+    <published>2017-11-28T10:10:16.000Z</published>
+    <updated>2019-03-15T06:57:15.677Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="java" scheme="http://www.candypapi.com/categories/java/"/>
+    
+      <category term="spring" scheme="http://www.candypapi.com/categories/java/spring/"/>
+    
+    
+      <category term="spring" scheme="http://www.candypapi.com/tags/spring/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>计算机网络与应用-结课报告</title>
+    <link href="http://www.candypapi.com/2017/11/27/Computer-Networks-and-Applications%20-%20Closing-Report/"/>
+    <id>http://www.candypapi.com/2017/11/27/Computer-Networks-and-Applications - Closing-Report/</id>
+    <published>2017-11-27T18:33:48.000Z</published>
+    <updated>2019-03-15T06:57:15.677Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;计算机网络与应用-结课报告&quot;&gt;&lt;a href=&quot;#计算机网络与应用-结课报告&quot; class=&quot;headerlink&quot; title=&quot;计算机网络与应用-结课报告&quot;&gt;&lt;/a&gt;计算机网络与应用-结课报告&lt;/h2&gt;&lt;h3 id=&quot;具体要求&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="life" scheme="http://www.candypapi.com/categories/life/"/>
+    
+      <category term="记录" scheme="http://www.candypapi.com/categories/life/%E8%AE%B0%E5%BD%95/"/>
+    
+    
+      <category term="计算机网络与应用" scheme="http://www.candypapi.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E4%B8%8E%E5%BA%94%E7%94%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java设计模式之单例模式</title>
+    <link href="http://www.candypapi.com/2017/11/24/Single-mode-Java-Design-Pattern/"/>
+    <id>http://www.candypapi.com/2017/11/24/Single-mode-Java-Design-Pattern/</id>
+    <published>2017-11-24T11:21:36.000Z</published>
+    <updated>2019-03-15T06:57:15.677Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;JAVA设计模式-–-单例&quot;&gt;&lt;a href=&quot;#JAVA设计模式-–-单例&quot; class=&quot;headerlink&quot; title=&quot;JAVA设计模式 – 单例&quot;&gt;&lt;/a&gt;JAVA设计模式 – 单例&lt;/h2&gt;&lt;h3 id=&quot;单例的实现&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="java" scheme="http://www.candypapi.com/categories/java/"/>
+    
+    
+      <category term="java" scheme="http://www.candypapi.com/tags/java/"/>
+    
+      <category term="设计模式" scheme="http://www.candypapi.com/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+  </entry>
+  
+</feed>
